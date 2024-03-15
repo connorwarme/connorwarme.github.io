@@ -1,3 +1,5 @@
+import Tools from "./Tools";
+
 const About = () => {
 
   // Hi, I'm Connor - a versatile, hardworking software developer who's committed to building a successful career in software development.
@@ -27,6 +29,7 @@ const About = () => {
         I&#39;m proficient in full-stack JavaScript (including React, Next.js, Node.js, Express, and Jest), (maybe include SOLID principles) including testing, debugging, and data handling. 
         I&#39;m eager for an opportunity to apply and grow my software development knowledge and skills!
       </p>
+      <Tools />
       <p>
         My educational background prepared me for work as a chaplain or pastor - I have a Masters of Divinity from Princeton Theological Seminary. I&#39;m quite capable, gifted even, but found myself wrestling with fundamental questions, and eventually decided I could no longer be a genuine leader in the faith. 
         I subsequently learned a new craft and worked as a finish carpenter, installing exquisite millwork in homes worth many millions.

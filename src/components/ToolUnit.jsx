@@ -1,8 +1,11 @@
 const ToolUnit = ({ unit }) => {
   return ( 
-    <div>
+    <div className="flex flex-col justify-center items-center">
       { unit && unit.img && unit.img.src && (
-        <img src={unit.img.src} alt={unit.img.alt} className="w-32 h-32 m-2" />
+        <>
+          <img src={unit.img.src} alt={unit.img.alt} className="w-20 h-20 m-2" />
+          <p>{unit.title}</p>
+        </>
       )}
     </div>
    );
