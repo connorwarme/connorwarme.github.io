@@ -1,4 +1,5 @@
 import About from "../components/About";
+import portraitPhoto from "../images/gallery/grin.jpg"
 
 const Home = () => {
   // about me
@@ -23,7 +24,10 @@ const Home = () => {
   //
   return ( 
     <>
-      <h1>Connor Warme</h1>
+      <h1 className="text-4xl">Connor Warme</h1>
+      <div className="w-dvw flex justify-center">
+        <img src={portraitPhoto} alt="Portrait of Connor" className="h-40 object-cover rounded-lg" />
+      </div>
       <ul>
         <li>
           <img />
