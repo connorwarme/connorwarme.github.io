@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'BigShoulders';
+  font-style: normal;
+  src: url(./assets/fonts/BigShouldersInlineText-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Hedvig';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./assets/fonts/HedvigLettersSerif-Regular-VariableFont_opsz.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair';
+  font-style: normal;
+  src: url(./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PlayfairItalic';
+  font-style: italic;
+  src: url(./assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Cairo';
+  font-style: normal;
+  src: url(./assets/fonts/Cairo-VariableFont_slnt\,wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Yrsa';
+  font-style: normal;
+  src: url(./assets/fonts/Yrsa-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Choko';
+  font-style: normal;
+  src: url(./assets/fonts/Chokokutai-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Grenze';
+  font-style: normal;
+  src: url(./assets/fonts/GrenzeGotisch-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Tourney';
+  font-stretch: condensed;
+  src: url(./assets/fonts/Tourney-VariableFont_wdth\,wght.ttf) format('truetype');
+}

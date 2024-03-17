@@ -7,6 +7,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'big': ['BigShoulders'],
+        'body': ['Hedvig'],
+        'play': ['Playfair'],
+        'play-italic': ['Playfair Italic'],
+        'cairo': ['Cairo'],
+        'yrsa': ['Yrsa'],
+        'tourney': ['Tourney'],
+        'choko': ['Choko'],
+        'grenze': ['Grenze'],
+      },
       colors: {
         'wave-spray': '#d2e6ee',
         'light-blue': '#b5d4df',
@@ -16,7 +27,7 @@ export default {
         'moonstone': '#62a4b5',
         'bay-current': '#3b7681',
         'gunmetal': '#0f242d',
-        
+
         'tree-green': '#255843',
         'myrtle-green': '#417176',
         'dark-forest': '#113932',

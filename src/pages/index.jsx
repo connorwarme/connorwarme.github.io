@@ -24,43 +24,44 @@ const Home = () => {
   //
   return ( 
     <>
-      <h1 className="text-4xl">Connor Warme</h1>
-      <div className="w-dvw flex justify-center">
-        <img src={portraitPhoto} alt="Portrait of Connor" className="h-40 object-cover rounded-lg" />
+      <div className="fake-header h-20 w-dvw"></div>
+      <h1 className="text-4xl text-center font-tourney">Connor Warme</h1>
+      <div className="w-dvw flex justify-center ">
+        <img src={portraitPhoto} alt="Portrait of Connor" className="h-40 w-48 object-cover rounded-lg border-wave-spray/50 border-2" />
       </div>
-      <ul>
+      <ul className="m-2 p-1 pb-3 mb-40 grid justify-center gap-4 bg-dark-forest/55 rounded-md text-wave-spray font-body text-start">
         <li>
           <img />
+          <p className="text-xl"><em className="font-grenze font-semibold text-3xl">C</em>ompassionate human</p>
           <p>
-            <em>compassionate human</em>
             {` // a kind and caring presence`}
           </p>
         </li>
         <li>
           <img />
+          <p className="text-xl"><em className="font-grenze font-semibold text-3xl">C</em>ritical thinker</p> 
           <p>
-            <em>critical thinker</em>
-            {` // a problem-solver`}
+            {` // a detail-driven problem-solver`}
           </p>
         </li>
         <li>
           <img />
+          <p className="text-xl"><em className="font-grenze font-semibold text-3xl">C</em>ommunicator</p>
           <p>
-            <em>collaborator</em>
-            {` // empathetic listener and effective communicator`}
+            {` // empathetic listener and collaborator`}
           </p>
         </li>
         <li>
           <img />
+          <p className="text-xl"><em className="font-grenze font-semibold text-3xl">C</em>oder</p>
           <p>
-            <em>coder</em>
-            {` // hardworking and detail-driven full-stack developer`}
+            {` // versatile full-stack developer`}
           </p>
         </li>
         <li>
           <img />
+          <p className="text-xl"><em className="font-grenze font-semibold text-3xl">C</em>ommitted to excellence</p>
           <p>
-            <em>committed to excellence</em>
             {` // in everything I do`}
           </p>
         </li>
