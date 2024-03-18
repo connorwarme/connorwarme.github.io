@@ -25,11 +25,11 @@ const Home = () => {
   return ( 
     <>
       <div className="fake-header h-20 w-dvw"></div>
-      <h1 className="text-4xl text-center font-tourney">Connor Warme</h1>
-      <div className="w-dvw flex justify-center ">
-        <img src={portraitPhoto} alt="Portrait of Connor" className="h-40 w-48 object-cover rounded-lg border-wave-spray/50 border-2" />
+      <h1 className="text-4xl text-center font-grenze font-bold text-wave-spray/90 tracking-wider" >Connor Warme</h1>
+      <div className="w-dvw flex justify-center mt-4 mb-4">
+        <img src={portraitPhoto} alt="Portrait of Connor" className="h-40 w-48 object-cover rounded-lg border-wave-spray/50 border" />
       </div>
-      <ul className="m-2 p-1 pb-3 mb-40 grid justify-center gap-4 bg-dark-forest/55 rounded-md text-wave-spray font-body text-start">
+      <ul className="m-2 p-1 pb-3 mb-40 grid justify-center gap-3 bg-dark-forest/55 rounded-md text-wave-spray font-body text-start">
         <li>
           <img />
           <p className="text-xl"><em className="font-grenze font-semibold text-3xl">C</em>ompassionate human</p>
