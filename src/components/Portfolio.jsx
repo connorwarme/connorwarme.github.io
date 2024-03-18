@@ -1,4 +1,5 @@
 import Card from "./Card";
+import cardData from "../data/projectData"
 
 const fakeData = [
   {
@@ -20,7 +21,7 @@ const Porfolio = () => {
     <div>
       <h2 className="font-grenze text-2xl text-wave-spray">Portfolio</h2>
       {
-        fakeData.map((item, index) => <Card key={index} item={item} />)
+        cardData.map((item, index) => <Card key={index} item={item} />)
       }
     </div>
    );
