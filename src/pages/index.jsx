@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Porfolio from "../components/Portfolio";
 import portraitPhoto from "../images/gallery/grin.jpg"
 
 const Home = () => {
@@ -66,6 +67,7 @@ const Home = () => {
           </p>
         </li>
       </ul>
+      <Porfolio />
       <About />
     </>
    );
