@@ -1,21 +1,6 @@
 import Card from "./Card";
 import cardData from "../data/projectData"
 
-const fakeData = [
-  {
-    title: 'Pro Site'
-  },
-  {
-    title: 'Fan Lair'
-  },
-  {
-    title: 'Battleship'
-  },
-  {
-    title: 'Shopping Cart'
-  }
-]
-
 const Porfolio = () => {
   return ( 
     <div>
