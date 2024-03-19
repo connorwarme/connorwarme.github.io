@@ -24,6 +24,7 @@ const javascript = {
     src: jsIcon,
     alt: 'JS icon',
   },
+  mini: false,
 }
 const react = {
   title: 'React',
@@ -31,6 +32,7 @@ const react = {
     src: reactIcon,
     alt: 'React icon',
   },
+  mini: false,
 }
 const node = {
   title: 'Node.js',
@@ -38,6 +40,7 @@ const node = {
     src: nodeIcon,
     alt: 'Node icon',
   },
+  mini: false,
 }
 const astro = {
   title: 'Astro',
@@ -45,6 +48,7 @@ const astro = {
     src: astroIcon,
     alt: 'Astro icon',
   },
+  mini: false,
 }
 const next = {
   title: 'Next.js',
@@ -52,6 +56,7 @@ const next = {
     src: nextIcon,
     alt: 'Next icon',
   },
+  mini: false,
 }
 const jest = {
   title: 'Jest',
@@ -59,6 +64,7 @@ const jest = {
     src: jestIcon,
     alt: 'Jest icon',
   },
+  mini: false,
 }
 const git = {
   title: 'Git',
@@ -66,6 +72,7 @@ const git = {
     src: gitIcon,
     alt: 'Git icon',
   },
+  mini: false,
 }
 const github = {
   title: 'GitHub',
@@ -73,6 +80,7 @@ const github = {
     src: githubIcon,
     alt: 'GitHub icon',
   },
+  mini: false,
 }
 const vite = {
   title: 'Vite',
@@ -80,6 +88,7 @@ const vite = {
     src: viteIcon,
     alt: 'Vite icon',
   },
+  mini: false,
 }
 const npm = {
   title: 'npm',
@@ -87,6 +96,7 @@ const npm = {
     src: npmIcon,
     alt: 'npm icon',
   },
+  mini: false,
 }
 const webpack = {
   title: 'Webpack',
@@ -94,6 +104,7 @@ const webpack = {
     src: webpackIcon,
     alt: 'Webpack icon',
   },
+  mini: false,
 }
 const mongo = {
   title: 'MongoDB',
@@ -101,6 +112,7 @@ const mongo = {
     src: mongoIcon,
     alt: 'MongoDB icon',
   },
+  mini: false,
 }
 const html = {
   title: 'HTML5',
@@ -108,6 +120,7 @@ const html = {
     src: htmlIcon,
     alt: 'HTML5 icon',
   },
+  mini: false,
 }
 const css = {
   title: 'CSS3',
@@ -115,6 +128,7 @@ const css = {
     src: cssIcon,
     alt: 'CSS3 icon',
   },
+  mini: false,
 }
 const tailwind = {
   title: 'TailwindCSS',
@@ -122,6 +136,7 @@ const tailwind = {
     src: tailwindIcon,
     alt: 'Tailwind icon',
   },
+  mini: false,
 }
 const vscode = {
   title: 'VSCode',
@@ -129,6 +144,7 @@ const vscode = {
     src: vscodeIcon,
     alt: 'VSCode icon',
   },
+  mini: false,
 }
 const markdown = {
   title: 'Markdown',
@@ -136,6 +152,7 @@ const markdown = {
     src: markdownIcon,
     alt: 'Markdown icon',
   },
+  mini: false,
 }
 const eslint = {
   title: 'ESLint',
@@ -143,6 +160,7 @@ const eslint = {
     src: eslintIcon,
     alt: 'ESLint icon',
   },
+  mini: false,
 }
 const prettier = {
   title: 'Prettier',
@@ -150,6 +168,7 @@ const prettier = {
     src: prettierIcon,
     alt: 'Prettier icon',
   },
+  mini: false,
 }
 
 const tools = [

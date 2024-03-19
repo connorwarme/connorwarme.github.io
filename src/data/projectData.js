@@ -17,28 +17,32 @@ const projectData = [
         img: {
           src: reactIcon,
           alt: 'React icon',
-        }
+        },
+        mini: true,
       },
       {
         title: 'React',
         img: {
           src: reactIcon,
           alt: 'React icon',
-        }
+        },
+        mini: true,
       },
       {
         title: 'React',
         img: {
           src: reactIcon,
           alt: 'React icon',
-        }
+        },
+        mini: true,
       },
       {
         title: 'React',
         img: {
           src: reactIcon,
           alt: 'React icon',
-        }
+        },
+        mini: true,
       },
     ]
   }
