@@ -9,21 +9,20 @@ const Card = ({ item }) => {
     <>
     {
       item && item.title && (
-        <div className="bg-wave-spray/50 m-2 rounded-lg">
-          <div className="flex mt-2 mb-2 justify-between">
-            <h3 className="text-xl text-gunmetal font-body">{item.title}</h3>
-            <p>{expanded ? '-' : '+'}</p>
-          </div>
-          <a className="w-inherit " href={item.url} target="_blank" rel="noreferrer">
-            <img src={item.img.src} alt={item.img.alt} className="w-inherit object-cover rounded-t-lg" />
-          </a>
-          <p>{item.points[0]}</p>
+        <div className="bg-midnight-green/75 m-2 p-2 rounded-lg">
+          <div className="flex mb-2 justify-center">
+            <a className="w-inherit " href={item.url} target="_blank" rel="noreferrer">
+              <h3 className="text-xl text-wave-spray font-body underline">{item.title}</h3>
+            </a>
+          </div>          
+          <img src={item.img.src} alt={item.img.alt} className="w-inherit object-cover rounded-md" />
           <ul className="flex items-center">
           <label className="justify-self-start mr-2">Built with:</label>
           {
             item.tools.map((tool, index) => <ToolUnit key={index} unit={tool} />)
           }
           </ul>
+          <button>{expanded ? 'Minimize' : 'See More'}</button>
         </div>
       )
     }

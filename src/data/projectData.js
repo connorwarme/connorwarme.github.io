@@ -1,4 +1,4 @@
-import proHome from "../images/gallery/screenshots/pro-home.png"
+import proHome from "../images/gallery/screenshots/proHome.png"
 import reactIcon from "../images/icons/react.svg"
 
 const projectData = [
