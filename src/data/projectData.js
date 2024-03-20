@@ -11,6 +11,7 @@ const projectData = [
     url: 'https://amitywarme.com',
     repo_url: 'https://github.com/connorwarme/pro-site',
     points: ['Establish online presence', 'Includes gallery, blog, contact, and more'],
+    summary: 'Pro rock climber and registered dietitian.',
     tools: [
       {
         title: 'React',

@@ -1,5 +1,6 @@
-import ToolUnit from "./ToolUnit";
 import { useState } from "react";
+import ToolUnit from "./ToolUnit";
+import CardImage from "./CardImage";
 
 const Card = ({ item }) => {
   const [expanded, setExpanded] = useState(false)
@@ -15,7 +16,7 @@ const Card = ({ item }) => {
               <h3 className="text-xl text-wave-spray font-body underline">{item.title}</h3>
             </a>
           </div>          
-          <img src={item.img.src} alt={item.img.alt} className="w-inherit object-cover rounded-md" />
+          <CardImage item={item} />
           <ul className="flex items-center">
           <label className="justify-self-start mr-2">Built with:</label>
           {
