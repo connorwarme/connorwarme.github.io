@@ -1,14 +1,10 @@
-import { useState } from "react";
 import ToolUnit from "./ToolUnit";
 import CardImage from "./CardImage";
 
-const Card = ({ item }) => {
-  const [expanded, setExpanded] = useState(false)
+const Card = ({ item, selection, handleSelection }) => {
+
   // need to change ToolUnit so that I can pass in the styling needed
 
-  const handleClick = () => {
-    setExpanded(!expanded)
-  }
   return ( 
     <>
     {
@@ -26,8 +22,25 @@ const Card = ({ item }) => {
             item.tools.map((tool, index) => <ToolUnit key={index} unit={tool} />)
           }
           </ul>
+          {
+            selection === item.id ?
+            <div>
+              <ul className="">
+                {
+                  item.points.map((point, index) => {
+                    return (
+                      <li key={index}>{point}</li>
+                    )
+                  })
+                }
+              </ul>
+              <a href={item.repo_url}>View repository</a>
+            </div>
+
+            : null
+          }
           <div className="flex justify-center">
-            <button className="bg-moonstone text-midnight-green p-2 pl-4 pr-4 rounded-full m-2" onClick={handleClick}>{expanded ? 'Minimize' : 'See More'}</button>
+            <button className="bg-moonstone text-midnight-green p-2 pl-4 pr-4 rounded-full m-2" onClick={() => handleSelection(item.id)}>{selection === item.id ? 'Minimize' : 'See More'}</button>
           </div>
           
         </div>
