@@ -1,24 +1,27 @@
-import proHome from "../images/gallery/screenshots/proHome.png"
-import flHome from "../images/gallery/screenshots/fl-home.png"
-import battleshipHome from "../images/gallery/screenshots/battleship-home.png"
-import shoppingCart from "../images/gallery/screenshots/shopping-cart.png"
-import astroIcon from "../images/icons/astro.svg"
-import reactIcon from "../images/icons/react.svg"
-import markdownIcon from "../images/icons/markdown.svg"
-import javascriptIcon from "../images/icons/javascript.svg"
-import cssIcon from "../images/icons/css3.svg"
-import nodeIcon from "../images/icons/node.svg"
-import expressIcon from "../images/icons/express.svg"
-import mongoIcon from "../images/icons/mongodb.svg"
-import jestIcon from "../images/icons/jest.svg"
-import webpackIcon from "../images/icons/webpack.svg"
-import prettierIcon from "../images/icons/prettier.svg"
-import eslintIcon from "../images/icons/eslint.svg"
-import githubIcon from "../images/icons/github.svg"
-import passportIcon from "../images/icons/passport.svg"
-import { GiMountainClimbing as climber, GiBattleship as battleship } from "react-icons/gi"; 
-import { LiaRingSolid as ring } from "react-icons/lia";
-import { TiShoppingCart as cart} from "react-icons/ti";
+import proHome from '../images/gallery/screenshots/proHome.png'
+import flHome from '../images/gallery/screenshots/fl-home.png'
+import battleshipHome from '../images/gallery/screenshots/battleship-home.png'
+import shoppingCart from '../images/gallery/screenshots/shopping-cart.png'
+import astroIcon from '../images/icons/astro.svg'
+import reactIcon from '../images/icons/react.svg'
+import markdownIcon from '../images/icons/markdown.svg'
+import javascriptIcon from '../images/icons/javascript.svg'
+import cssIcon from '../images/icons/css3.svg'
+import nodeIcon from '../images/icons/node.svg'
+import expressIcon from '../images/icons/express.svg'
+import mongoIcon from '../images/icons/mongodb.svg'
+import jestIcon from '../images/icons/jest.svg'
+import webpackIcon from '../images/icons/webpack.svg'
+import prettierIcon from '../images/icons/prettier.svg'
+import eslintIcon from '../images/icons/eslint.svg'
+import githubIcon from '../images/icons/github.svg'
+import passportIcon from '../images/icons/passport.svg'
+import {
+  GiMountainClimbing as climber,
+  GiBattleship as battleship,
+} from 'react-icons/gi'
+import { LiaRingSolid as ring } from 'react-icons/lia'
+import { TiShoppingCart as cart } from 'react-icons/ti'
 import { v4 as uuidv4 } from 'uuid'
 
 const projectData = [
@@ -31,7 +34,12 @@ const projectData = [
     },
     url: 'https://amitywarme.com',
     repo_url: 'https://github.com/connorwarme/pro-site',
-    points: ['Prioritize performance and SEO', 'Photo gallery, blog, contact & more', 'Responsive design', 'Cross-browser compatibility'],
+    points: [
+      'Prioritize performance and SEO',
+      'Photo gallery, blog, contact & more',
+      'Responsive design',
+      'Cross-browser compatibility',
+    ],
     bullet: climber,
     summary: 'Pro rock climber and registered dietitian',
     tools: [
@@ -75,7 +83,7 @@ const projectData = [
         },
         mini: true,
       },
-    ]
+    ],
   },
   {
     id: uuidv4(),
@@ -86,7 +94,12 @@ const projectData = [
     },
     url: 'https://connorwarme.github.io/rop-lair/login',
     repo_url: 'https://github.com/connorwarme/rop-lair',
-    points: ['Full stack (MERN) social media app', 'Authentication w/ PassportJS', 'Responsive design', 'Cross-browser compatibility'],
+    points: [
+      'Full stack (MERN) social media app',
+      'Authentication w/ PassportJS',
+      'Responsive design',
+      'Cross-browser compatibility',
+    ],
     bullet: ring,
     summary: 'Social media app with The Rings of Power theme',
     tools: [
@@ -146,7 +159,7 @@ const projectData = [
         },
         mini: true,
       },
-    ]
+    ],
   },
   {
     id: uuidv4(),
@@ -157,7 +170,11 @@ const projectData = [
     },
     url: 'https://connorwarme.github.io/battleship',
     repo_url: 'https://github.com/connorwarme/battleship',
-    points: ['AI weighs proximity and probability', 'Apply Test Driven Development', 'Responsive design',],
+    points: [
+      'AI weighs proximity and probability',
+      'Apply Test Driven Development',
+      'Responsive design',
+    ],
     bullet: battleship,
     summary: 'A browser-playable version of the classic game',
     tools: [
@@ -217,7 +234,7 @@ const projectData = [
         },
         mini: true,
       },
-    ]
+    ],
   },
   {
     id: uuidv4(),
@@ -228,7 +245,11 @@ const projectData = [
     },
     url: 'https://connorwarme.github.io/shopping-cart',
     repo_url: 'https://github.com/connorwarme/shopping-cart',
-    points: ['Apply Test Driven Development', 'Manage state for cart functionality', 'Responsive design',],
+    points: [
+      'Apply Test Driven Development',
+      'Manage state for cart functionality',
+      'Responsive design',
+    ],
     bullet: cart,
     summary: 'An e-commerce site created with React',
     tools: [
@@ -272,8 +293,8 @@ const projectData = [
         },
         mini: true,
       },
-    ]
-  }
+    ],
+  },
 ]
 
 export default projectData

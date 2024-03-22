@@ -1,22 +1,22 @@
-import jsIcon from "../images/icons/javascript.svg"
-import reactIcon from "../images/icons/react.svg"
-import nodeIcon from "../images/icons/node.svg"
-import astroIcon from "../images/icons/astro.svg"
-import nextIcon from "../images/icons/nextjs.svg"
-import jestIcon from "../images/icons/jest.svg"
-import gitIcon from "../images/icons/git.svg"
-import githubIcon from "../images/icons/github.svg"
-import viteIcon from "../images/icons/vite.svg"
-import npmIcon from "../images/icons/npm.svg"
-import webpackIcon from "../images/icons/webpack.svg"
-import mongoIcon from "../images/icons/mongodb.svg"
-import htmlIcon from "../images/icons/html.svg"
-import cssIcon from "../images/icons/css3.svg"
-import tailwindIcon from "../images/icons/tailwind.svg"
-import vscodeIcon from "../images/icons/vscode.svg"
-import markdownIcon from "../images/icons/markdown.svg"
-import eslintIcon from "../images/icons/eslint.svg"
-import prettierIcon from "../images/icons/prettier.svg"
+import jsIcon from '../images/icons/javascript.svg'
+import reactIcon from '../images/icons/react.svg'
+import nodeIcon from '../images/icons/node.svg'
+import astroIcon from '../images/icons/astro.svg'
+import nextIcon from '../images/icons/nextjs.svg'
+import jestIcon from '../images/icons/jest.svg'
+import gitIcon from '../images/icons/git.svg'
+import githubIcon from '../images/icons/github.svg'
+import viteIcon from '../images/icons/vite.svg'
+import npmIcon from '../images/icons/npm.svg'
+import webpackIcon from '../images/icons/webpack.svg'
+import mongoIcon from '../images/icons/mongodb.svg'
+import htmlIcon from '../images/icons/html.svg'
+import cssIcon from '../images/icons/css3.svg'
+import tailwindIcon from '../images/icons/tailwind.svg'
+import vscodeIcon from '../images/icons/vscode.svg'
+import markdownIcon from '../images/icons/markdown.svg'
+import eslintIcon from '../images/icons/eslint.svg'
+import prettierIcon from '../images/icons/prettier.svg'
 
 const javascript = {
   title: 'JavaScript',
@@ -190,7 +190,7 @@ const tools = [
   vscode,
   markdown,
   eslint,
-  prettier
+  prettier,
 ]
 
-export default tools;
+export default tools
