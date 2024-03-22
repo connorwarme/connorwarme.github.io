@@ -1,6 +1,8 @@
 import ToolUnit from "./ToolUnit";
 import CardImage from "./CardImage";
+import { VscTools } from "react-icons/vsc";
 import { VscFoldDown, VscFoldUp } from "react-icons/vsc";
+import { HiOutlineExternalLink as LinkIcon } from "react-icons/hi";
 
 const Card = ({ item, selection, handleSelection }) => {
 
@@ -17,8 +19,8 @@ const Card = ({ item, selection, handleSelection }) => {
             </a>
           </div>          
           <CardImage item={item} />
-          <ul className="flex items-center m-1 ml-4">
-          <label className="justify-self-start mr-2">Built with:</label>
+          <ul className="flex justify-center items-center m-1 ml-4">
+          <span className="flex items-center mr-2"><VscTools className="h-6 w-6 text-wave-spray"/><span className="ml-1">:</span></span>
           {
             item.tools.map((tool, index) => <ToolUnit key={index} unit={tool} />)
           }
@@ -30,12 +32,20 @@ const Card = ({ item, selection, handleSelection }) => {
                 {
                   item.points.map((point, index) => {
                     return (
-                      <li key={index}>{point}</li>
+                      <div key={index} className="flex items-center">
+                        <item.bullet className="mr-1" style={{height: '16px', width: '16px'}}/>
+                        <li>{point}</li>
+                      </div>
                     )
                   })
                 }
+                <div className="flex items-center">
+                  <LinkIcon className="mr-1" style={{height: '16px', width: '16px'}}/>
+                  <li>
+                    <a href={item.repo_url} className="" target="_blank" rel="noreferrer">View repository</a>
+                  </li>
+                </div>
               </ul>
-              <a href={item.repo_url}>View repository</a>
             </div>
 
             : null
