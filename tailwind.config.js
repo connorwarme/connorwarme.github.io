@@ -34,6 +34,21 @@ export default {
         'deep-forest': '#1b3a35',
         'midnight-green': '#1f434a',
       },
+      keyframes: {
+        miniBounce: {
+          '0%, 50%, 100%': {
+            transform: 'translateY(0)',
+            'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)'
+          },
+          '25%, 75%': {
+            transform: 'translateY(-15%)',
+            'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)'
+          }
+        }
+      },
+      animation: {
+        miniBounce: 'miniBounce 1.5s ease-in-out 1.5'
+      }
     },
   },
   plugins: [],

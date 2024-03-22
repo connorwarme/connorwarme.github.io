@@ -55,16 +55,16 @@ const Card = ({ item, selection, handleSelection }) => {
             </div>
           </div>
           <div className="flex justify-center">
-            <button className="bg-wave-spray text-midnight-green p-2 pl-4 pr-4 rounded-full m-2 flex items-center relative shadow-sm shadow-midnight-green transition-all ease-in-out duration-150 active:shadow-none active:top-[2px] active:left-[1px]" onClick={() => handleSelection(item.id)}>
+            <button className="bg-transparent text-wave-spray tracking-wide border-2 border-wave-spray p-2 pl-4 pr-4 rounded-full m-2 font-semibold relative shadow-sm shadow-midnight-green transition-all ease-in-out duration-150 hover:animate-miniBounce active:shadow-none active:top-[2px] active:left-[1px]" onClick={() => handleSelection(item.id)}>
             { selection === item.id 
-              ? <>
+              ? <div className="flex items-center">
                   <span>Minimize</span>
-                  <VscFoldUp className="ml-2 text-midnight-green"/>
-                </> 
-              : <>
+                  <VscFoldUp className="ml-2 text-wave-spray"/>
+                </div> 
+              : <div className="flex items-center">
                   <span>See More</span>
-                  <VscFoldDown className="ml-2 text-midnight-green" />
-                </>
+                  <VscFoldDown className="ml-2 text-wave-spray" />
+                </div>
             }
             </button>
           </div>
