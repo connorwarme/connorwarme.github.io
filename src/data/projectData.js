@@ -15,6 +15,7 @@ import webpackIcon from "../images/icons/webpack.svg"
 import prettierIcon from "../images/icons/prettier.svg"
 import eslintIcon from "../images/icons/eslint.svg"
 import githubIcon from "../images/icons/github.svg"
+import passportIcon from "../images/icons/passport.svg"
 import { GiMountainClimbing as climber, GiBattleship as battleship } from "react-icons/gi"; 
 import { LiaRingSolid as ring } from "react-icons/lia";
 import { TiShoppingCart as cart} from "react-icons/ti";
@@ -130,6 +131,14 @@ const projectData = [
         mini: true,
       },
       {
+        title: 'PassportJS',
+        img: {
+          src: passportIcon,
+          alt: 'PassportJS icon',
+        },
+        mini: true,
+      },
+      {
         title: 'GitHub',
         img: {
           src: githubIcon,
@@ -148,7 +157,7 @@ const projectData = [
     },
     url: 'https://connorwarme.github.io/battleship',
     repo_url: 'https://github.com/connorwarme/battleship',
-    points: ['AI weighs proximity and probability', 'Implement Test Driven Development', 'Responsive design',],
+    points: ['AI weighs proximity and probability', 'Apply Test Driven Development', 'Responsive design',],
     bullet: battleship,
     summary: 'A browser-playable version of the classic game',
     tools: [
@@ -185,6 +194,14 @@ const projectData = [
         mini: true,
       },
       {
+        title: 'ESLint',
+        img: {
+          src: eslintIcon,
+          alt: 'ESLint icon',
+        },
+        mini: true,
+      },
+      {
         title: 'Prettier',
         img: {
           src: prettierIcon,
@@ -211,7 +228,7 @@ const projectData = [
     },
     url: 'https://connorwarme.github.io/shopping-cart',
     repo_url: 'https://github.com/connorwarme/shopping-cart',
-    points: ['Implement Test Driven Development', 'Manage state for cart functionality', 'Responsive design',],
+    points: ['Apply Test Driven Development', 'Manage state for cart functionality', 'Responsive design',],
     bullet: cart,
     summary: 'An e-commerce site created with React',
     tools: [

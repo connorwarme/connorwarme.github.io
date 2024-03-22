@@ -33,14 +33,14 @@ const Card = ({ item, selection, handleSelection }) => {
                   item.points.map((point, index) => {
                     return (
                       <div key={index} className="flex items-center">
-                        <item.bullet className="mr-1" style={{height: '16px', width: '16px'}}/>
+                        <item.bullet className="mr-2" style={{height: '16px', width: '16px'}}/>
                         <li>{point}</li>
                       </div>
                     )
                   })
                 }
                 <div className="flex items-center">
-                  <LinkIcon className="mr-1" style={{height: '16px', width: '16px'}}/>
+                  <LinkIcon className="mr-2" style={{height: '16px', width: '16px'}}/>
                   <li>
                     <a href={item.repo_url} className="" target="_blank" rel="noreferrer">View repository</a>
                   </li>
