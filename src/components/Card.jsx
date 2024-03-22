@@ -25,41 +25,45 @@ const Card = ({ item, selection, handleSelection }) => {
             item.tools.map((tool, index) => <ToolUnit key={index} unit={tool} />)
           }
           </ul>
-          {
-            selection === item.id ?
-            <div>
-              <ul className="">
-                {
-                  item.points.map((point, index) => {
-                    return (
-                      <div key={index} className="flex items-center">
-                        <item.bullet className="mr-2" style={{height: '16px', width: '16px'}}/>
-                        <li>{point}</li>
-                      </div>
-                    )
-                  })
-                }
-                <div className="flex items-center">
-                  <LinkIcon className="mr-2" style={{height: '16px', width: '16px'}}/>
-                  <li>
-                    <a href={item.repo_url} className="" target="_blank" rel="noreferrer">View repository</a>
-                  </li>
-                </div>
-              </ul>
-            </div>
+          <div className="max-h-0 transition-[max-height] ease-in-out duration-500 has-[div.expand]:max-h-[300px] has-[div.expand]:duration-1000ms">
+            <div className="opacity-0 transition-opacity delay-150 duration-300 has-[div.expand]:opacity-100">
+            {
+              selection === item.id ?
+              <div className="expand">
+                <ul className="transition-all delay-300 duration-300 ease-in-out">
+                  {
+                    item.points.map((point, index) => {
+                      return (
+                        <div key={index} className="flex items-center">
+                          <item.bullet className="mr-2" style={{height: '16px', width: '16px'}}/>
+                          <li>{point}</li>
+                        </div>
+                      )
+                    })
+                  }
+                  <div className="flex items-center">
+                    <LinkIcon className="mr-2" style={{height: '16px', width: '16px'}}/>
+                    <li>
+                      <a href={item.repo_url} className="" target="_blank" rel="noreferrer">View repository</a>
+                    </li>
+                  </div>
+                </ul>
+              </div>
 
-            : null
-          }
+              : null
+            }
+            </div>
+          </div>
           <div className="flex justify-center">
-            <button className="bg-moonstone text-midnight-green p-2 pl-4 pr-4 rounded-full m-2 flex items-center" onClick={() => handleSelection(item.id)}>
+            <button className="bg-wave-spray text-midnight-green p-2 pl-4 pr-4 rounded-full m-2 flex items-center relative shadow-sm shadow-midnight-green transition-all ease-in-out duration-150 active:shadow-none active:top-[2px] active:left-[1px]" onClick={() => handleSelection(item.id)}>
             { selection === item.id 
               ? <>
                   <span>Minimize</span>
-                  <VscFoldUp className="ml-2"/>
+                  <VscFoldUp className="ml-2 text-midnight-green"/>
                 </> 
               : <>
                   <span>See More</span>
-                  <VscFoldDown className="ml-2" />
+                  <VscFoldDown className="ml-2 text-midnight-green" />
                 </>
             }
             </button>
