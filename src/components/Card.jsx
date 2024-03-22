@@ -1,5 +1,6 @@
 import ToolUnit from "./ToolUnit";
 import CardImage from "./CardImage";
+import { VscFoldDown, VscFoldUp } from "react-icons/vsc";
 
 const Card = ({ item, selection, handleSelection }) => {
 
@@ -16,7 +17,7 @@ const Card = ({ item, selection, handleSelection }) => {
             </a>
           </div>          
           <CardImage item={item} />
-          <ul className="flex items-center ml-4">
+          <ul className="flex items-center m-1 ml-4">
           <label className="justify-self-start mr-2">Built with:</label>
           {
             item.tools.map((tool, index) => <ToolUnit key={index} unit={tool} />)
@@ -40,7 +41,18 @@ const Card = ({ item, selection, handleSelection }) => {
             : null
           }
           <div className="flex justify-center">
-            <button className="bg-moonstone text-midnight-green p-2 pl-4 pr-4 rounded-full m-2" onClick={() => handleSelection(item.id)}>{selection === item.id ? 'Minimize' : 'See More'}</button>
+            <button className="bg-moonstone text-midnight-green p-2 pl-4 pr-4 rounded-full m-2 flex items-center" onClick={() => handleSelection(item.id)}>
+            { selection === item.id 
+              ? <>
+                  <span>Minimize</span>
+                  <VscFoldUp className="ml-2"/>
+                </> 
+              : <>
+                  <span>See More</span>
+                  <VscFoldDown className="ml-2" />
+                </>
+            }
+            </button>
           </div>
           
         </div>
