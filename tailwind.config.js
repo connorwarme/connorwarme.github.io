@@ -43,7 +43,7 @@ export default {
         },
       },
       animation: {
-        miniBounce: 'miniBounce 1.5s ease-in-out 1.5',
+        miniBounce: 'miniBounce 1s ease-in-out 1',
       },
     },
   },

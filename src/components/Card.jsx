@@ -57,7 +57,7 @@ const Card = ({ item, selection, handleSelection }) => {
                       <li>
                         <a
                           href={item.repo_url}
-                          className=""
+                          className="hover:underline"
                           target="_blank"
                           rel="noreferrer"
                         >
