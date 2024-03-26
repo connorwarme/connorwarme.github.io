@@ -1,6 +1,7 @@
-import About from '../components/About'
+import AboutMini from '../components/AboutMini'
 import Porfolio from '../components/Portfolio'
 import portraitPhoto from '../images/gallery/grin.jpg'
+
 
 const Home = () => {
   return (
@@ -57,12 +58,10 @@ const Home = () => {
         </li>
       </ul>
       <Porfolio />
-      <div>
-        <h2 className='text-2xl font-grenze'>About</h2>
-        <p className='font-body'>Hi, I&apos;m Connor - a hungry, hardworking software developer who&apos;s committed to building a successful career in the field.</p>
-      </div>
+      <AboutMini />
     </>
   )
 }
 
 export default Home
+
