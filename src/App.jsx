@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import Home from './pages'
 import lakePhoto from './images/gallery/lake.jpg'
 import waterfallPhoto from './images/gallery/waterfall1.jpg'
@@ -12,7 +13,7 @@ function App() {
         alt="Waterfall background image"
         className="fixed left-0 top-0 -z-10 h-dvh w-dvw object-cover"
       />
-      <Home />
+      <Outlet />
     </div>
   )
 }
