@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom'
-import Home from './pages'
 import lakePhoto from './images/gallery/lake.jpg'
 import waterfallPhoto from './images/gallery/waterfall1.jpg'
 import viewPhoto from './images/gallery/valleyview.jpg'

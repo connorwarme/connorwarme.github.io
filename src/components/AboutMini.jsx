@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IoRocketSharp as Rocket } from "react-icons/io5";
 import winds from "../images/gallery/winds.jpg"
 
@@ -22,12 +23,12 @@ const AboutMini = () => {
         }
       </ul>
       <div className="flex justify-center font-body font-semibold text-xl p-2 pb-4">
-        <a className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green">
+        <Link to={"about"} className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green">
           About
-        </a>
-        <a className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green">
+        </Link>
+        <Link to={"contact"} className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green">
           Contact
-        </a>
+        </Link>
       </div>
       <img src={winds} alt="Connor lakeside in the Wind River Range" className="min-h-24 w-dvh object-cover" />
     </div>
