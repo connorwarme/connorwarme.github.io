@@ -1,6 +1,19 @@
 import Tools from './Tools'
+import ExternalLink from './ExternalLink'
+import { Link } from 'react-router-dom'
 
 const AboutComp = () => {
+
+  const top = {
+    text: 'The Odin Project',
+    url: 'https://www.theodinproject.com',
+    style: 'ml-1'
+  }
+  const gh = {
+    text: 'GitHub',
+    url: 'https://github.com/connorwarme',
+    style: ''
+  }
 
   return (
     <div className="font-play p-2 bg-midnight-green/75 rounded-md whitespace-pre-wrap">
@@ -25,13 +38,13 @@ const AboutComp = () => {
         preteen years, I bought a &quot;How to Build a PC for Dummies&quot; book
         and proceeded to buy all the parts and assemble my own desktop!
       </p>
-      <p>
+      <p className=''>
         &#0009;I began my coding journey in late 2021. I found 
-        <a> The Odin Project</a>, a web development curriculum curated by others who had taught
+        <ExternalLink link={top} />, a web development curriculum curated by others who had taught
         themselves the requisite coding skills to switch careers. It has been as
         an invaluable resource on my journey, providing a trajectory, learning
         content, and project ideas to practice along the way. I&#39;m currently
-        looking for work! You can view my portfolio or contact me.
+        looking for work! You can view my <Link to={'/#portfolio'} className='underline'>portfolio</Link>, <ExternalLink link={gh} /> or <Link to={'../contact'} className='underline'>contact me</Link>.
       </p>
       <p>
         &#0009;When not at the computer, I&#39;m often supporting (and trying to keep

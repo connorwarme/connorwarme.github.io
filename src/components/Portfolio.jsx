@@ -9,7 +9,7 @@ const Porfolio = () => {
     setExpanded(expanded === id ? null : id)
   }
   return (
-    <div>
+    <div id='portfolio'>
       <h2 className="font-grenze text-2xl text-wave-spray">Portfolio</h2>
       {cardData.map((item) => (
         <Card
