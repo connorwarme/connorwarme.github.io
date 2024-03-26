@@ -7,7 +7,7 @@ export default {
         big: ['BigShoulders'],
         body: ['Hedvig'],
         play: ['Playfair'],
-        'play-italic': ['Playfair Italic'],
+        playItalic: ['Playfair Italic'],
         cairo: ['Cairo'],
         yrsa: ['Yrsa'],
         tourney: ['Tourney'],
