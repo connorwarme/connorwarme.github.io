@@ -37,7 +37,7 @@ const projectData = [
     points: [
       'Prioritize performance and SEO',
       'Photo gallery, blog, contact & more',
-      'Responsive design',
+      'Responsive and accessible design',
       'Cross-browser compatibility',
     ],
     bullet: climber,
