@@ -1,6 +1,8 @@
 import Tools from './Tools'
 import ExternalLink from './ExternalLink'
 import { Link } from 'react-router-dom'
+import lake from "../images/gallery/lake.jpg"
+import ac from "../images/gallery/a&c.jpg"
 
 const AboutComp = () => {
 
@@ -14,15 +16,16 @@ const AboutComp = () => {
     url: 'https://github.com/connorwarme',
     style: ''
   }
+  const aw = {
+    text: 'Amity Warme',
+    url: 'https://amitywarme.com',
+    style: '',
+  }
 
   return (
-    <div className="font-play p-2 bg-midnight-green/75 rounded-md whitespace-pre-wrap">
-      <h3 className="text-lg font-semibold pt-3 pb-3 text-center">
-        Hi, I&#39;m Connor - a software developer with full-stack experience.
-      </h3>
-      <Tools className="bg-wave-spray" />
-      <h2 className="text-md font-semibold text-center">Background</h2>
-      <p>
+    <div className="font-play p-2 bg-midnight-green/75 whitespace-pre-wrap">
+      <h2 className="text-xl font-semibold text-center p-2 pb-4">Background</h2>
+      <p className='pb-2'>
         &#0009;My education prepared me for work as a chaplain or pastor -
         I have a Masters of Divinity from Princeton Theological Seminary.
         I&#39;m quite capable, gifted even, but found myself wrestling with
@@ -31,14 +34,14 @@ const AboutComp = () => {
         worked as a finish carpenter, installing exquisite millwork in homes
         worth many millions.
       </p>
-      <p>
+      <p className='pb-2'>
         &#0009;I&#39;ve always been
         technologically-inclined; growing up I was always the family&#39;s
         &quot;resident expert&quot; and troubleshooter extraordinaire. In my
         preteen years, I bought a &quot;How to Build a PC for Dummies&quot; book
         and proceeded to buy all the parts and assemble my own desktop!
       </p>
-      <p className=''>
+      <p className='pb-2'>
         &#0009;I began my coding journey in late 2021. I found 
         <ExternalLink link={top} />, a web development curriculum curated by others who had taught
         themselves the requisite coding skills to switch careers. It has been as
@@ -46,13 +49,16 @@ const AboutComp = () => {
         content, and project ideas to practice along the way. I&#39;m currently
         looking for work! You can view my <Link to={'/#portfolio'} className='underline'>portfolio</Link>, <ExternalLink link={gh} /> or <Link to={'../contact'} className='underline'>contact me</Link>.
       </p>
-      <p>
-        &#0009;When not at the computer, I&#39;m often supporting (and trying to keep
-        up with) my wife, Amity Warme, a professional rock climber. I
+      <p className='mb-4'>
+        &#0009;When not at the computer, I&#39;m often supporting my wife, <ExternalLink link={aw} />, a professional rock climber. I
         enjoy pursuing mountain adventures (primarily skiing and climbing). 
         I also enjoy spending quality time with family and friends,
         scheming and dreaming about our next adventures, and reading.
       </p>
+      <img src={ac} alt="Amity and Connor in Yosemite" className='w-dvw object-fit rounded-sm'/>
+      <p className='m-1 pb-2 text-center'>Amity and Connor in Yosemite, USA</p>
+      <img src={lake} alt="Connor climbing at Lake Louise" className='w-dvw object-fit rounded-sm' />
+      <p className='m-1 pb-2 text-center'>Connor climbing at Lake Louise, CA</p>
     </div>
   )
 }
