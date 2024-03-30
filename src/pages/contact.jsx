@@ -89,7 +89,7 @@ const Contact = () => {
             </div>
             <div className="flex justify-end">
               { !pending 
-              ? <button type="submit" className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 hover:bg-midnight-green hover:text-wave-spray transition ease-in-out duration-200">Send</button> 
+              ? <button type="submit" className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 relative hover:bg-midnight-green hover:text-wave-spray transition ease-in-out duration-200 shadow-sm shadow-midnight-green active:left-[1px] active:top-[2px] active:shadow-none">Send</button> 
               : <button disabled className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 flex">
                 <LoadingIcon className="animate-spin h-6 w-6 flex-shrink-0 text-midnight-green mr-4" />
                 <span>Sending</span>
@@ -110,7 +110,7 @@ const Contact = () => {
           <div className="font-play flex flex-col gap-6">
             <h3 className="text-2xl self-center">Thanks for reaching out!</h3>
             <p>I&apos;ll get back to you shortly, with my reply going to {response.contact.email}.</p>
-            <Link to={"/"} className="self-center border-2 border-midnight-green py-3 px-4 rounded-md">Return to Home</Link>
+            <Link to={"/"} className="relative self-center border-2 border-midnight-green py-3 px-4 rounded-md shadow-md shadow-midnight-green active:left-[1px] active:top-[2px] active:shadow-none">Return to Home</Link>
           </div>
         )}
       </section>
