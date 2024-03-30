@@ -23,10 +23,10 @@ const AboutMini = () => {
         }
       </ul>
       <div className="flex justify-center font-body font-semibold text-xl p-2 pb-4">
-        <Link to={"about"} className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green">
+        <Link to={"about"} className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green relative shadow-sm shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none">
           About
         </Link>
-        <Link to={"contact"} className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green">
+        <Link to={"contact"} className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green relative shadow-sm shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none">
           Contact
         </Link>
       </div>

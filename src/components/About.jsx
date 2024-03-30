@@ -9,17 +9,17 @@ const AboutComp = () => {
   const top = {
     text: 'The Odin Project',
     url: 'https://www.theodinproject.com',
-    style: 'ml-1'
+    style: 'ml-1 hover:underline'
   }
   const gh = {
     text: 'GitHub',
     url: 'https://github.com/connorwarme',
-    style: ''
+    style: 'hover:underline'
   }
   const aw = {
     text: 'Amity Warme',
     url: 'https://amitywarme.com',
-    style: '',
+    style: 'hover:underline',
   }
 
   return (

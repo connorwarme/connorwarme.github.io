@@ -8,12 +8,12 @@ const About = () => {
   const cv = {
     text: "Resume",
     url: resume,
-    style: "p-2 pr-4 pl-4 border-2 border-wave-spray rounded-lg text-xl"
+    style: "p-2 pr-4 pl-4 border-2 border-wave-spray rounded-lg text-xl hover:bg-wave-spray hover:text-midnight-green relative shadow-sm shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none"
   }
   const gh = {
     text: 'GitHub',
     url: "https://github.com/connorwarme",
-    style: "p-2 pr-4 pl-4 border-2 border-wave-spray rounded-lg text-xl"
+    style: "p-2 pr-4 pl-4 border-2 border-wave-spray rounded-lg text-xl hover:bg-wave-spray hover:text-midnight-green relative shadow-sm shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none"
   }
   return ( 
     <>
