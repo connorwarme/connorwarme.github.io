@@ -11,7 +11,7 @@ const CardImage = ({ item }) => {
           {item.summary}
         </h2>
         <a
-          className="w-fit rounded-lg border-2 border-glacier p-2 pl-4 pr-4 text-center text-wave-spray transition duration-300 ease-in-out hover:bg-glacier hover:text-gunmetal"
+          className="w-fit rounded-lg border-2 border-glacier p-2 pl-4 pr-4 text-center text-wave-spray transition duration-300 ease-in-out hover:bg-glacier hover:text-gunmetal relative shadow-sm shadow-slate-800 active:top-[1px] active:left-[2px] active:shadow-none"
           href={item.url}
           target="_blank"
           rel="noreferrer"
