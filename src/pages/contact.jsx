@@ -5,6 +5,9 @@ const Contact = () => {
   const [message, setMessage] = useState(null)
   const [emailError, setEmailError] = useState(null)
   const [messageError, setMessageError] = useState(null)
+  const [pending, setPending] = useState(null)
+  const [success, setSuccess] = useState(null)
+  const [error, setError] = useState(null)
 
   const handleEmail = (e) => {
     if (e.target.value.length === 0) {
@@ -25,7 +28,38 @@ const Contact = () => {
 
   }
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
+    setPending(true);
+
+    fetch("https://dubmailer.fly.dev/contactconnor", {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        email: email, 
+        message: message,
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data && data.errors) {
+        setSuccess(false)
+        setError('Apologies! There was an error sending your message. Please refresh the page to try again, or email amity@amitywarme.com. Sorry for the inconvenience!')
+      } else {
+        setSuccess(true)
+      }
+      setPending(false);
+
+      // console.log(data)
+    })
+    .catch(e => {
+      console.log(e)
+      setSuccess(false)
+      setPending(false)
+      setError('Apologies! There was an error sending your message. Please refresh the page to try again, or email amity@amitywarme.com. Sorry for the inconvenience!');
+    })
   }
 
 
