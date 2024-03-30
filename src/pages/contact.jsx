@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineErrorOutline as ErrorIcon } from "react-icons/md";
+import { VscLoading as LoadingIcon } from "react-icons/vsc";
 
 const Contact = () => {
   const [email, setEmail] = useState(null)
@@ -9,7 +10,7 @@ const Contact = () => {
   const [messageError, setMessageError] = useState(null)
   const [pending, setPending] = useState(null)
   const [success, setSuccess] = useState(null)
-  const [error, setError] = useState('Apologies! There was an error sending your message. Please refresh the page to try again, or email amity@amitywarme.com. Sorry for the inconvenience!')
+  const [error, setError] = useState(false)
   const [response, setResponse] = useState(null)
 
   const handleEmail = (e) => {
@@ -70,10 +71,10 @@ const Contact = () => {
   return ( 
     <div className="w-dvw">
       <h1 className="text-4xl font-grenze text-center m-10">Contact</h1>
-      <section className="w-full flex flex-col py-8 bg-wave-spray/75 text-midnight-green p-4 mx-auto">
+      <section className="w-full flex flex-col py-8 bg-wave-spray/75 text-midnight-green p-4 mx-auto transition-all">
         { !success && (
           <form onSubmit={handleSubmit} className="font-play w-full" action="#" autoComplete="off">
-            <div className="flex flex-col space-y-4 lg:space-y-3 mb-6 font-semibold">
+            <div className="flex flex-col space-y-4 lg:space-y-3 mb-6">
               <div className="pb-4 text-center">
                 <h3 className="text-lg font-bold">I&apos;d love to hear from you!</h3>
               </div>
@@ -88,8 +89,11 @@ const Contact = () => {
             </div>
             <div className="flex justify-end">
               { !pending 
-              ? <button type="submit" className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 hover:bg-wave-spray">Send</button> 
-              : <button type="submit" disabled className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 hover:bg-wave-spray">Sending</button>}
+              ? <button type="submit" className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 hover:bg-midnight-green hover:text-wave-spray transition ease-in-out duration-200">Send</button> 
+              : <button disabled className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 flex">
+                <LoadingIcon className="animate-spin h-6 w-6 flex-shrink-0 text-midnight-green mr-4" />
+                <span>Sending</span>
+              </button>}
             </div> 
             { error && (
               <div className="my-4">
@@ -103,10 +107,10 @@ const Contact = () => {
           </form>
         )}
         { success && (
-          <div>
-            <h3>Thanks for reaching out!</h3>
+          <div className="font-play flex flex-col gap-6">
+            <h3 className="text-2xl self-center">Thanks for reaching out!</h3>
             <p>I&apos;ll get back to you shortly, with my reply going to {response.contact.email}.</p>
-            <Link to={"/"}>Return to Home</Link>
+            <Link to={"/"} className="self-center border-2 border-midnight-green py-3 px-4 rounded-md">Return to Home</Link>
           </div>
         )}
       </section>
