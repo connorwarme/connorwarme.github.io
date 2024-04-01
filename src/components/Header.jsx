@@ -5,7 +5,7 @@ const Header = () => {
     <div className="flex items-center text-wave-spray">
       <div className="ml-4">
         <Link to={"/"} className="md:hidden ">
-          <h3 className="font-grenze text-4xl font-bold ">CW</h3>
+          <h3 className="font-grenze text-[2.5rem] font-bold ">CW</h3>
         </Link>
         <Link to={"/"} className="hidden md:block">
           <h3 className="font-play text-3xl font-bold relative before:absolute before:left-[50%] before:h-[2px] before:bottom-0 before:transition-all before:ease-in-out before:duration-300 before:bg-wave-spray before:origin-center before:content-[''] before:w-0 hover:before:w-[98%] hover:before:left-[1%] before:rounded-sm">Connor Warme</h3>

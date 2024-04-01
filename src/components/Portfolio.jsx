@@ -10,7 +10,7 @@ const Porfolio = () => {
   }
   return (
     <div id='portfolio'>
-      <h2 className="font-grenze text-2xl text-wave-spray">Portfolio</h2>
+      <h2 className="font-grenze text-4xl text-wave-spray text-center m-10">Portfolio</h2>
       {cardData.map((item) => (
         <Card
           key={item.id}
