@@ -6,8 +6,7 @@ import portraitPhoto from '../images/gallery/grin.jpg'
 const Home = () => {
   return (
     <>
-      <div className="fake-header h-20 w-dvw"></div>
-      <h1 className="text-center font-grenze text-4xl font-bold tracking-wider text-wave-spray/90">
+      <h1 className="text-center font-grenze text-4xl font-bold tracking-wide text-wave-spray m-10">
         Connor Warme
       </h1>
       <div className="mb-4 mt-4 flex w-dvw justify-center">
@@ -17,7 +16,7 @@ const Home = () => {
           className="h-40 w-48 rounded-lg border border-wave-spray/50 object-cover"
         />
       </div>
-      <ul className="m-2 mb-40 grid justify-center gap-3 rounded-md bg-dark-forest/55 p-1 pb-3 text-start font-body text-wave-spray">
+      <ul className="m-2 mb-40 grid justify-center gap-3 rounded-md bg-midnight-green/75 pb-3 text-start font-body text-wave-spray">
         <li>
           <img />
           <p className="text-xl">

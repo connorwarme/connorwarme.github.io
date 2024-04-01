@@ -70,7 +70,7 @@ const Contact = () => {
 
   return ( 
     <div className="w-dvw">
-      <h1 className="text-4xl font-grenze text-center m-10">Contact</h1>
+      <h1 className="text-4xl font-grenze text-center m-10 text-wave-spray">Contact</h1>
       <section className="w-full flex flex-col py-8 bg-wave-spray/75 text-midnight-green p-4 mx-auto transition-all">
         { !success && (
           <form onSubmit={handleSubmit} className="font-play w-full" action="#" autoComplete="off">

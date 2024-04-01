@@ -16,7 +16,7 @@ const About = () => {
     style: "p-2 pr-4 pl-4 border-2 border-wave-spray rounded-lg text-xl hover:bg-wave-spray hover:text-midnight-green relative shadow-sm shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none"
   }
   return ( 
-    <>
+    <div className="text-wave-spray">
       <h1 className="text-4xl font-grenze text-center m-10">About</h1>
       <div className="bg-midnight-green/75 font-play p-2 mb-64" >
         <h3 className="text-xl font-semibold pt-3 pb-3 text-center">
@@ -29,7 +29,7 @@ const About = () => {
         </div>
       </div>
       <AboutComp />
-    </>
+    </div>
    );
 }
  
