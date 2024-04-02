@@ -1,4 +1,4 @@
-import tools from '../data/toolData'
+import { tools } from '../data/toolData'
 import ToolUnit from './ToolUnit'
 
 const Tools = () => {

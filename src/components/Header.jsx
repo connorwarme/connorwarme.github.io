@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return ( 
-    <div className="flex items-center text-wave-spray">
+    <div className="flex items-center text-wave-spray" id="top">
       <div className="ml-4">
         <Link to={"/"} className="md:hidden ">
           <h3 className="font-grenze text-[2.5rem] font-bold ">CW</h3>
