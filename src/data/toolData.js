@@ -171,6 +171,13 @@ const prettier = {
   mini: false,
 }
 
+const siteTools = [
+  {...react, mini: true},
+  {...tailwind, mini: true},
+  {...eslint, mini: true},
+  {...prettier, mini: true},
+  {...git, mini: true},
+]
 const tools = [
   javascript,
   react,
@@ -193,4 +200,4 @@ const tools = [
   prettier,
 ]
 
-export default tools
+export { tools, siteTools } 
