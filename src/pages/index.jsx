@@ -16,46 +16,48 @@ const Home = () => {
           className="h-40 w-48 rounded-lg border border-wave-spray/50 object-cover"
         />
       </div>
-      <ul className="m-2 mb-40 grid justify-center gap-3 rounded-md bg-midnight-green/75 pb-3 text-start font-body text-wave-spray">
-        <li>
-          <img />
-          <p className="text-xl">
-            <em className="font-grenze text-3xl font-semibold">C</em>
-            ompassionate human
-          </p>
-          <p>{` // a kind and caring presence`}</p>
-        </li>
-        <li>
-          <img />
-          <p className="text-xl">
-            <em className="font-grenze text-3xl font-semibold">C</em>ritical
-            thinker
-          </p>
-          <p>{` // a detail-driven problem-solver`}</p>
-        </li>
-        <li>
-          <img />
-          <p className="text-xl">
-            <em className="font-grenze text-3xl font-semibold">C</em>ommunicator
-          </p>
-          <p>{` // empathetic listener and collaborator`}</p>
-        </li>
-        <li>
-          <img />
-          <p className="text-xl">
-            <em className="font-grenze text-3xl font-semibold">C</em>oder
-          </p>
-          <p>{` // versatile full-stack developer`}</p>
-        </li>
-        <li>
-          <img />
-          <p className="text-xl">
-            <em className="font-grenze text-3xl font-semibold">C</em>ommitted to
-            excellence
-          </p>
-          <p>{` // in everything I do`}</p>
-        </li>
-      </ul>
+      <div className='m-2 mb-40 flex justify-center'>
+        <ul className="grid justify-center gap-3 rounded-md bg-midnight-green/75 pb-3 text-start font-body text-wave-spray w-full max-w-sm">
+          <li>
+            <img />
+            <p className="text-xl">
+              <em className="font-grenze text-3xl font-semibold">C</em>
+              ompassionate human
+            </p>
+            <p>{` // a kind and caring presence`}</p>
+          </li>
+          <li>
+            <img />
+            <p className="text-xl">
+              <em className="font-grenze text-3xl font-semibold">C</em>ritical
+              thinker
+            </p>
+            <p>{` // a detail-driven problem-solver`}</p>
+          </li>
+          <li>
+            <img />
+            <p className="text-xl">
+              <em className="font-grenze text-3xl font-semibold">C</em>ommunicator
+            </p>
+            <p>{` // empathetic listener and collaborator`}</p>
+          </li>
+          <li>
+            <img />
+            <p className="text-xl">
+              <em className="font-grenze text-3xl font-semibold">C</em>oder
+            </p>
+            <p>{` // versatile full-stack developer`}</p>
+          </li>
+          <li>
+            <img />
+            <p className="text-xl">
+              <em className="font-grenze text-3xl font-semibold">C</em>ommitted to
+              excellence
+            </p>
+            <p>{` // in everything I do`}</p>
+          </li>
+        </ul>
+      </div>
       <Porfolio />
       <AboutMini />
     </>

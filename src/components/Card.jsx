@@ -10,7 +10,7 @@ const Card = ({ item, selection, handleSelection }) => {
   return (
     <>
       {item && item.title && (
-        <div className="m-2 rounded-lg bg-midnight-green/75 p-2 font-play">
+        <div className="m-2 rounded-lg bg-midnight-green/75 p-2 font-play max-w-sm">
           <div className="mb-2 flex justify-center">
             <a
               className="w-inherit "
