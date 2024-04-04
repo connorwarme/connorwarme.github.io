@@ -7,7 +7,7 @@ const AboutMini = () => {
 
     return ( 
       <>
-        <div className="bg-midnight-green mt-10 font-body">
+        <div className="bg-midnight-green mt-10 mb-24 font-body">
           <h3 className='text-3xl font-grenze m-2 p-2 pt-6 pb-0 text-center'>A software developer who&apos;s a craftsman at heart: </h3>
           <h3 className='text-xl m-2 p-2 pt-2 text-center'>detail-driven, analytical, hardworking and meticulous in his pursuit of elegant interfaces and excellent solutions.</h3>
 
@@ -31,8 +31,8 @@ const AboutMini = () => {
               Contact
             </Link>
           </div>
+          <img src={winds} alt="Connor lakeside in the Wind River Range" className="min-h-24 w-dvh object-cover" />
         </div>
-        <img src={winds} alt="Connor lakeside in the Wind River Range" className="min-h-24 w-dvh object-cover mt-24" />
       </>
 
    );
