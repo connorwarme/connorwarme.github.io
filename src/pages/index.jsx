@@ -6,14 +6,16 @@ import portraitPhoto from '../images/gallery/grin.jpg'
 const Home = () => {
   return (
     <>
-      <h1 className="text-center font-grenze text-4xl font-bold tracking-wide text-wave-spray m-10">
+      <h1 className="text-center font-grenze text-4xl font-bold tracking-wide text-wave-spray m-10 sm:text-6xl sm:m-24">
         Connor Warme
       </h1>
+      <div className='grid sm:grid-cols-6'>
+      <div className='col-start-2 col-end-5'>
       <div className="mb-4 mt-4 flex w-dvw justify-center">
         <img
           src={portraitPhoto}
           alt="Portrait of Connor"
-          className="h-40 w-48 rounded-lg border border-wave-spray/50 object-cover"
+          className="h-40 w-48 rounded-lg border border-wave-spray/50 object-cover sm:w-96 sm:h-80"
         />
       </div>
       <div className='m-2 mb-40 flex justify-center'>
@@ -60,6 +62,8 @@ const Home = () => {
       </div>
       <Porfolio />
       <AboutMini />
+      </div>
+      </div>
     </>
   )
 }
