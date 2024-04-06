@@ -11,15 +11,17 @@ const Porfolio = () => {
   return (
     <div id='portfolio'>
       <h2 className="font-grenze text-4xl text-wave-spray text-center m-10">Portfolio</h2>
-      <div className='grid grid-cols-1 place-items-center md:grid-cols-2 md:grid-rows-2'>
-        {cardData.map((item) => (
-          <Card
-            key={item.id}
-            item={item}
-            selection={expanded}
-            handleSelection={handleSelection}
-          />
-        ))}
+      <div className='flex justify-center'>
+        <div className='grid grid-cols-1 place-items-center md:grid-cols-2 md:grid-rows-2 max-w-4xl'>
+          {cardData.map((item) => (
+            <Card
+              key={item.id}
+              item={item}
+              selection={expanded}
+              handleSelection={handleSelection}
+            />
+          ))}
+        </div>
       </div>
     </div>
   )
