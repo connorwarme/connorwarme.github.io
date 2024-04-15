@@ -10,8 +10,8 @@ const Home = () => {
         Connor Warme
       </h1>
       <div className='grid sm:grid-cols-6'>
-      <div className='col-start-2 col-end-5'>
-      <div className="mb-4 mt-4 flex w-dvw justify-center">
+      <div className='col-start-2 col-end-6 md:bg-midnight-green/55'>
+      <div className="mb-4 mt-4 flex justify-center">
         <img
           src={portraitPhoto}
           alt="Portrait of Connor"
