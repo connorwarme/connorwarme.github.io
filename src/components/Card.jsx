@@ -11,7 +11,7 @@ const Card = ({ item, selection, handleSelection }) => {
     <>
       {item && item.title && (
         <div className="m-2 rounded-md bg-midnight-green/75 p-2 font-play max-w-sm flex flex-col justify-between md:self-stretch md:max-w-lg lg:max-w-2xl">
-          <div className="mb-2 flex justify-center">
+          <div className="mb-2 flex justify-center md:m-2 md:mb-4">
             <a
               className="w-inherit "
               href={item.url}
@@ -24,7 +24,7 @@ const Card = ({ item, selection, handleSelection }) => {
             </a>
           </div>
           <CardImage item={item} />
-          <ul className="m-1 ml-4 flex items-center justify-center">
+          <ul className="m-1 ml-4 flex items-center justify-center md:m-4">
             <span className="mr-2 flex items-center">
               <VscTools className="h-6 w-6 text-wave-spray" />
               <span className="ml-1">:</span>
@@ -40,7 +40,7 @@ const Card = ({ item, selection, handleSelection }) => {
                   <ul className="transition-all delay-300 duration-300 ease-in-out">
                     {item.points.map((point, index) => {
                       return (
-                        <div key={index} className="flex items-center">
+                        <div key={index} className="flex items-center md:m-1">
                           <item.bullet
                             className="mr-2"
                             style={{ height: '16px', width: '16px' }}
@@ -49,7 +49,7 @@ const Card = ({ item, selection, handleSelection }) => {
                         </div>
                       )
                     })}
-                    <div className="flex items-center">
+                    <div className="flex items-center md:m-1">
                       <LinkIcon
                         className="mr-2"
                         style={{ height: '16px', width: '16px' }}
@@ -70,7 +70,7 @@ const Card = ({ item, selection, handleSelection }) => {
               ) : null}
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center md:p-2">
             <button
               className="btn-ex m-2 rounded-sm border-2 border-wave-spray p-2 px-4 font-semibold tracking-wide text-wave-spray active:left-[1px] active:top-[2px] active:shadow-none md:text-lg md:h-14 md:px-5 lg:text-xl lg:h-16 lg:px-6"
               onClick={() => handleSelection(item.id)}
