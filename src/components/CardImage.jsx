@@ -11,15 +11,18 @@ const CardImage = ({ item }) => {
           {item.summary}
         </h2>
         <a
-          className="w-fit rounded-lg border-2 border-glacier p-2 pl-4 pr-4 text-center text-wave-spray transition duration-300 ease-in-out hover:bg-glacier hover:text-gunmetal relative shadow-sm shadow-slate-800 active:top-[1px] active:left-[2px] active:shadow-none"
+          className="btn p-2 pl-4 pr-4 text-center transition duration-300 ease-in-out relative shadow-sm shadow-slate-800 active:top-[1px] active:left-[2px] active:shadow-none"
           href={item.url}
           target="_blank"
           rel="noreferrer"
         >
+          <svg>
+            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+          </svg>
           Visit Website
         </a>
       </figcaption>
-      <div className="absolute left-0 top-0 z-10 h-full w-full rounded-md bg-gradient-to-r from-bay-current via-slate-800 to-midnight-green opacity-0 transition duration-500 ease-in-out group-hover:opacity-100"></div>
+      <div className="absolute left-0 top-0 z-10 h-full w-full rounded-md bg-gradient-to-r from-bay-current via-slate-800 to-midnight-green opacity-0 transition duration-500 ease-in-out group-hover:opacity-75"></div>
     </figure>
   )
 }

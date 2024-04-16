@@ -18,3 +18,50 @@
 
   scroll-behavior: smooth;
 }
+
+@layer components {
+  .btn {
+    color: #d2e6ee;
+    background-color: #1f434a;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    height: 60px;
+    width: 180px; 
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  .btn svg {
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  .btn rect {
+    fill: none;
+    stroke: #d2e6ee;
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+  }
+  
+  .btn:hover {
+    background: rgba(#0f242d, 0);
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .btn:hover rect {
+    stroke-width: 6;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
