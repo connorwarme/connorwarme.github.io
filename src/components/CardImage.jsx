@@ -11,13 +11,13 @@ const CardImage = ({ item }) => {
           {item.summary}
         </h2>
         <a
-          className="btn p-2 pl-4 pr-4 text-center transition duration-300 ease-in-out relative shadow-sm shadow-slate-800 active:top-[1px] active:left-[2px] active:shadow-none"
+          className="btn p-2 pl-4 pr-4 text-center rounded-sm relative shadow-sm shadow-slate-800 active:top-[1px] active:left-[2px] active:shadow-none sm:text-lg md:text-xl"
           href={item.url}
           target="_blank"
           rel="noreferrer"
         >
-          <svg>
-            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+          <svg className="rounded-sm">
+            <rect x="0" y="0" fill="none" width="100%" height="100%" />
           </svg>
           Visit Website
         </a>

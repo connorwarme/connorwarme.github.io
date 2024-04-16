@@ -33,35 +33,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .5s ease-in-out;
   }
   .btn:hover {
     text-decoration: none;
+    background: rgba(#0f242d, 0);
+    font-weight: 700;
+    letter-spacing: 1px;
   }
-  
   .btn svg {
     height: 60px;
     left: 0;
     position: absolute;
     top: 0; 
     width: 100%; 
-  }
-  .btn rect {
     fill: none;
-    stroke: #d2e6ee;
-    stroke-width: 3;
-    stroke-dasharray: 422, 0;
-    transition: all 0.35s linear;
+    stroke: rgb(210, 230, 238);
+    stroke-width: 4;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1.25s ease-in-out;
   }
-  
-  .btn:hover {
-    background: rgba(#0f242d, 0);
-    font-weight: 700;
-    letter-spacing: 1px;
+  .btn svg > rect {
+    fill: none;
   }
-  .btn:hover rect {
-    stroke-width: 6;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  .btn:hover svg {
+    stroke-width: 4;
+    stroke-dashoffset: -480;
+  }
+  .btn-ex {
+    border: 1px solid rgb(210, 230, 238);
+    overflow: hidden;
+    position: relative;
+  }
+  .btn-ex span {
+    z-index: 20;
+  }  
+  .btn-ex:after {
+    background: rgb(210, 230, 238);
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .9;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  .btn-ex:hover:after {
+    left: 120%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
 }

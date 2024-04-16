@@ -72,7 +72,7 @@ const Card = ({ item, selection, handleSelection }) => {
           </div>
           <div className="flex justify-center">
             <button
-              className="relative m-2 rounded-full border-2 border-wave-spray bg-transparent p-2 pl-4 pr-4 font-semibold tracking-wide text-wave-spray shadow-sm shadow-midnight-green transition-all duration-150 ease-in-out hover:animate-miniBounce active:left-[1px] active:top-[2px] active:shadow-none"
+              className="btn-ex m-2 rounded-sm border-2 border-wave-spray p-2 px-4 font-semibold tracking-wide text-wave-spray active:left-[1px] active:top-[2px] active:shadow-none md:text-lg md:h-14 md:px-5 lg:text-xl lg:h-16 lg:px-6"
               onClick={() => handleSelection(item.id)}
             >
               {selection === item.id ? (
