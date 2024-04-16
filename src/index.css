@@ -86,4 +86,21 @@
     left: 120%;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   }
+  .btn-link {
+    color: rgb(210, 230, 238);
+    border: 2px solid transparent;
+    outline: 2px solid;
+    outline-color: rgba(210, 230, 238, 1);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    border-radius: 0.125rem;
+  } 
+  
+  .btn-link:hover {
+    border: 2px solid rgba(210, 230, 238, 1);
+    box-shadow: inset 0 0 2px rgba(210, 230, 238, .5), 0 0 2px rgba(210, 230, 238, .2);
+    outline-color: rgba(210, 230, 238, 0);
+    outline-offset: 15px; 
+  }
 }
