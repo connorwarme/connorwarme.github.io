@@ -10,7 +10,7 @@ const Card = ({ item, selection, handleSelection }) => {
   return (
     <>
       {item && item.title && (
-        <div className="m-2 rounded-lg bg-midnight-green/75 p-2 font-play max-w-sm flex flex-col justify-between md:self-stretch">
+        <div className="m-2 rounded-md bg-midnight-green/75 p-2 font-play max-w-sm flex flex-col justify-between md:self-stretch md:max-w-lg lg:max-w-2xl">
           <div className="mb-2 flex justify-center">
             <a
               className="w-inherit "
@@ -36,7 +36,7 @@ const Card = ({ item, selection, handleSelection }) => {
           <div className="has-[div.expand]:duration-1000ms max-h-0 transition-[max-height] duration-500 ease-in-out has-[div.expand]:max-h-[300px]">
             <div className="opacity-0 transition-opacity delay-150 duration-300 has-[div.expand]:opacity-100">
               {selection === item.id ? (
-                <div className="expand">
+                <div className="expand md:ml-28 lg:ml-48">
                   <ul className="transition-all delay-300 duration-300 ease-in-out">
                     {item.points.map((point, index) => {
                       return (
