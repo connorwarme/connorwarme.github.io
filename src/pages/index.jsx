@@ -12,15 +12,15 @@ const Home = () => {
       <div className='grid sm:grid-cols-9'>
       <div className='sm:col-start-2 sm:col-end-9 flex flex-col items-center'>
       <div className='md:grid lg:grid-cols-2 lg:gap-16'>
-        <div className="mb-4 mt-4 flex justify-center sm:justify-end">
+        <div className="mb-4 mt-4 flex justify-center lg:justify-end">
           <img
             src={portraitPhoto}
             alt="Portrait of Connor"
             className="h-40 w-48 rounded-lg border border-wave-spray/50 object-cover sm:w-96 sm:h-96 lg:border-4 lg:border-wave-spray/80"
           />
         </div>
-        <div className='m-2 mb-40 flex justify-center lg:justify-start lg:m-4'>
-          <ul className="grid justify-center gap-3 rounded-md bg-midnight-green/75 pb-3 text-start font-body text-wave-spray w-full max-w-sm lg:bg-wave-spray/80 lg:text-midnight-green lg:pb-0">
+        <div className='w-dvw mb-40 flex justify-center lg:justify-start lg:m-4 lg:w-auto'>
+          <ul className="grid justify-center gap-3 sm:rounded-md bg-midnight-green pb-3 text-start font-body text-wave-spray w-full sm:max-w-sm sm:bg-midnight-green/75 lg:bg-wave-spray/80 lg:text-midnight-green lg:pb-0 lg:w-96">
             <li>
               <img />
               <p className="text-xl">
