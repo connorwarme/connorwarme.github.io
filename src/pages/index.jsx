@@ -9,18 +9,18 @@ const Home = () => {
       <h1 className="text-center font-grenze text-4xl font-bold tracking-wide text-wave-spray m-10 sm:text-6xl sm:m-24">
         Connor Warme
       </h1>
-      <div className='grid sm:grid-cols-6'>
-      <div className='sm:col-start-2 sm:col-end-6 lg:bg-midnight-green'>
-      <div className='md:grid lg:grid-cols-2 lg:bg-midnight-green'>
-        <div className="mb-4 mt-4 flex justify-center">
+      <div className='grid sm:grid-cols-9'>
+      <div className='sm:col-start-2 sm:col-end-9 flex flex-col items-center'>
+      <div className='md:grid lg:grid-cols-2 lg:gap-16'>
+        <div className="mb-4 mt-4 flex justify-center sm:justify-end">
           <img
             src={portraitPhoto}
             alt="Portrait of Connor"
-            className="h-40 w-48 rounded-lg border border-wave-spray/50 object-cover sm:w-96 sm:h-96"
+            className="h-40 w-48 rounded-lg border border-wave-spray/50 object-cover sm:w-96 sm:h-96 lg:border-4 lg:border-wave-spray/80"
           />
         </div>
-        <div className='m-2 mb-40 flex justify-center lg:justify-start lg:mb-2'>
-          <ul className="grid justify-center gap-3 rounded-md bg-midnight-green/75 pb-3 text-start font-body text-wave-spray w-full max-w-sm lg:bg-transparent">
+        <div className='m-2 mb-40 flex justify-center lg:justify-start lg:m-4'>
+          <ul className="grid justify-center gap-3 rounded-md bg-midnight-green/75 pb-3 text-start font-body text-wave-spray w-full max-w-sm lg:bg-wave-spray/80 lg:text-midnight-green lg:pb-0">
             <li>
               <img />
               <p className="text-xl">
