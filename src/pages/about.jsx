@@ -18,12 +18,17 @@ const About = () => {
   return ( 
     <div className="text-wave-spray">
       <h1 className="text-4xl font-grenze text-center m-10">About</h1>
-      <div className="bg-midnight-green/75 font-play p-2 mb-64" >
+      <div className="bg-midnight-green/75 font-play p-2 mb-64 sm:px-4" >
         <h3 className="text-xl font-semibold pt-3 pb-3 text-center">
-          Hi, I&#39;m Connor - a software developer with full-stack experience.
+          Hi, I&#39;m Connor - a versatile software developer with full-stack experience.
         </h3>
+        <p className="sm:px-8">
+          I&apos;m a passionate problem-solver, proficient in full stack JavaScript, with a strong desire to apply and grow my software development skills. 
+          Known for my kindness and empathy, I&apos;m a reliable and responsible team-player with excellent communication skills.
+          I&apos;m eager for an opportunity and committed to building a successful career in the field.
+        </p>
         <Tools className="bg-wave-spray" />
-        <div className="flex justify-center gap-3 mb-4">
+        <div className="flex justify-center gap-3 mb-4 sm:gap-6">
           <ExternalLink link={cv} />
           <ExternalLink link={gh} />
         </div>

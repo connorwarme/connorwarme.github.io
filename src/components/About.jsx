@@ -1,4 +1,3 @@
-import Tools from './Tools'
 import ExternalLink from './ExternalLink'
 import { Link } from 'react-router-dom'
 import lake from "../images/gallery/lake.jpg"
@@ -23,7 +22,7 @@ const AboutComp = () => {
   }
 
   return (
-    <div className="font-play p-2 bg-midnight-green/75 whitespace-pre-wrap">
+    <div className="font-play p-4 bg-midnight-green/75 whitespace-pre-wrap sm:px-8">
       <h2 className="text-xl font-semibold text-center p-2 pb-4">Background</h2>
       <p className='pb-2'>
         &#0009;My education prepared me for work as a chaplain or pastor -
@@ -37,7 +36,7 @@ const AboutComp = () => {
       <p className='pb-2'>
         &#0009;I&#39;ve always been
         technologically-inclined; growing up I was always the family&#39;s
-        &quot;resident expert&quot; and troubleshooter extraordinaire. In my
+        &quot;resident IT expert&quot; and troubleshooter extraordinaire. In my
         preteen years, I bought a &quot;How to Build a PC for Dummies&quot; book
         and proceeded to buy all the parts and assemble my own desktop!
       </p>
