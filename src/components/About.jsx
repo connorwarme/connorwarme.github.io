@@ -20,6 +20,11 @@ const AboutComp = () => {
     url: 'https://amitywarme.com',
     style: 'inline-block transition ease-in-out duration-150 hover:underline',
   }
+  const ts = {
+    text: 'Taylor Shaffer',
+    url: "https://www.taylorshaffer.com/",
+    style: "inline-block transition ease-in-out duration-150 hover:underline pl-1"
+  }
 
   return (
     <div className="font-play p-4 bg-midnight-green/75 whitespace-pre-wrap sm:px-8 md:rounded-b-md">
@@ -55,7 +60,10 @@ const AboutComp = () => {
         scheming and dreaming about our next adventures, and reading.
       </p>
       <img src={ac} alt="Amity and Connor in Yosemite" className='w-dvw object-fit rounded-sm'/>
-      <p className='m-1 pb-2 text-center md:m-2 md:pb-6'>Amity and Connor in Yosemite, USA</p>
+      <p className='m-1 pb-2 text-center md:m-2 md:pb-6'>
+        Amity and Connor in Yosemite, USA. Photo: 
+        <ExternalLink link={ts} />
+      </p>
       <img src={lake} alt="Connor climbing at Lake Louise" className='w-dvw object-fit rounded-sm' />
       <p className='m-1 pb-2 text-center'>Connor climbing at Lake Louise, CA</p>
     </div>
