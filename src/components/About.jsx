@@ -69,7 +69,7 @@ const AboutComp = () => {
         </p>
       </div>
       <img src={lake} alt="Connor climbing at Lake Louise" className='w-dvw object-fit rounded-sm' />
-      <p className='m-1 pb-2 text-center'>Connor climbing at Lake Louise, CA</p>
+      <p className='m-1 mt-2 pb-2 text-center'>Connor climbing at Lake Louise, CA</p>
     </div>
   )
 }

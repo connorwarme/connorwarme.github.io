@@ -29,7 +29,7 @@ const About = () => {
             I&apos;m eager for an opportunity and committed to building a successful career in the field.
           </p>
           <Tools className="bg-wave-spray" />
-          <div className="flex justify-center gap-3 mb-4 sm:gap-6">
+          <div className="flex justify-center mb-4 gap-4 sm:gap-12">
             <ExternalLink link={cv} />
             <ExternalLink link={gh} />
           </div>

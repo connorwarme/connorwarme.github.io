@@ -23,17 +23,11 @@ const AboutMini = () => {
               })
             }
           </ul>
-          <div className="flex justify-center font-play font-semibold tracking-wide text-xl p-2 pb-4 gap-4 md:gap-12">
-            {/* <Link to={"about"} className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green relative shadow-sm shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none">
-              About
-            </Link> */}
-            <Link to={"about"} className="btn-link text-wave-spray flex items-center py-2 px-4 md:px-8 lg:px-12">
+          <div className="flex justify-center font-play font-semibold tracking-wide text-xl p-2 pb-4 gap-4 sm:gap-12">
+            <Link to={"about"} className="btn-link text-wave-spray flex items-center py-2 px-4 md:h-14 md:px-8 lg:px-12 relative shadow-md shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none">
               About
             </Link>
-            {/* <Link to={"contact"} className="p-2 pr-4 pl-4 m-2 border-wave-spray border-2 rounded-lg transition ease-in-out duration-150 cursor-pointer hover:bg-wave-spray hover:text-midnight-green relative shadow-sm shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none">
-              Contact
-            </Link> */}
-            <Link to={"contact"} className="btn-link text-wave-spray flex items-center py-2 px-4 md:px-8 lg:px-12">
+            <Link to={"contact"} className="btn-link text-wave-spray flex items-center py-2 px-4 md:h-14 md:px-8 lg:px-12 relative shadow-md shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none">
               Contact
             </Link>
           </div>
