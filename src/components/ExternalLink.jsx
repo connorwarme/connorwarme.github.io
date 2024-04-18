@@ -1,7 +1,7 @@
 import { HiOutlineExternalLink as LinkIcon } from 'react-icons/hi'
 const ExternalLink = ({ link }) => {
 
-  const style = `inline-block transition ease-in-out duration-150 ${link.style}`
+  const style = `${link.style}`
   return ( 
     <a href={link.url} target="_blank" rel="noreferrer" className={style}>
       <span>{link.text}</span>
