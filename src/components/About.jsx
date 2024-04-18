@@ -60,10 +60,14 @@ const AboutComp = () => {
         scheming and dreaming about our next adventures, and reading.
       </p>
       <img src={ac} alt="Amity and Connor in Yosemite" className='w-dvw object-fit rounded-sm'/>
-      <p className='m-1 pb-2 text-center md:m-2 md:pb-6'>
-        Amity and Connor in Yosemite, USA. Photo: 
-        <ExternalLink link={ts} />
-      </p>
+      <div className='flex flex-wrap justify-center pb-2 md:m-2 md:pb-6'>
+        <p className='m-1'>
+          Amity and Connor in Yosemite, USA.
+        </p>
+        <p className='m-1'>Photo: 
+          <ExternalLink link={ts} />
+        </p>
+      </div>
       <img src={lake} alt="Connor climbing at Lake Louise" className='w-dvw object-fit rounded-sm' />
       <p className='m-1 pb-2 text-center'>Connor climbing at Lake Louise, CA</p>
     </div>
