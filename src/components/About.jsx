@@ -22,7 +22,7 @@ const AboutComp = () => {
   }
 
   return (
-    <div className="font-play p-4 bg-midnight-green/75 whitespace-pre-wrap sm:px-8">
+    <div className="font-play p-4 bg-midnight-green/75 whitespace-pre-wrap sm:px-8 md:rounded-b-md">
       <h2 className="text-xl font-semibold text-center p-2 pb-4">Background</h2>
       <p className='pb-2'>
         &#0009;My education prepared me for work as a chaplain or pastor -
@@ -48,14 +48,14 @@ const AboutComp = () => {
         content, and project ideas to practice along the way. I&#39;m currently
         looking for work! You can view my <Link to={'/#portfolio'} className='underline'>portfolio</Link>, <ExternalLink link={gh} /> or <Link to={'../contact'} className='underline'>contact me</Link>.
       </p>
-      <p className='mb-4'>
+      <p className='mb-4 md:mb-8'>
         &#0009;When not at the computer, I&#39;m often supporting my wife, <ExternalLink link={aw} />, a professional rock climber. I
         enjoy pursuing mountain adventures (primarily skiing and climbing). 
         I also enjoy spending quality time with family and friends,
         scheming and dreaming about our next adventures, and reading.
       </p>
       <img src={ac} alt="Amity and Connor in Yosemite" className='w-dvw object-fit rounded-sm'/>
-      <p className='m-1 pb-2 text-center'>Amity and Connor in Yosemite, USA</p>
+      <p className='m-1 pb-2 text-center md:m-2 md:pb-6'>Amity and Connor in Yosemite, USA</p>
       <img src={lake} alt="Connor climbing at Lake Louise" className='w-dvw object-fit rounded-sm' />
       <p className='m-1 pb-2 text-center'>Connor climbing at Lake Louise, CA</p>
     </div>
