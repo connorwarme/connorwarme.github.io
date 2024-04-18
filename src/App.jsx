@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   return (
-    <div>
+    <div className='flex flex-col justify-center min-h-dvh'>
       <Header />
       <ScrollToAnchor />
       <img
@@ -18,6 +18,7 @@ function App() {
         className="fixed left-0 top-0 -z-10 h-dvh w-dvw object-cover"
       />
       <Outlet />
+      <div className='grow'></div>
       <Footer />
     </div>
   )
