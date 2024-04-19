@@ -12,7 +12,7 @@ const Footer = () => {
   }
 
   return ( 
-    <div className="w-dvw bg-midnight-green/75 text-wave-spray font-play flex flex-col justify-center p-4">
+    <div className="w-dvw bg-midnight-green/75 text-wave-spray font-play flex flex-col justify-center p-4 shadow-lg shadow-gunmetal/20">
       <div className='flex justify-center'>
         <a href="#top" className="text-center font-body pb-[6px] relative before:absolute before:left-[50%] before:h-[1px] before:bottom-[15%] before:transition-all before:ease-in-out before:duration-300 before:bg-wave-spray before:origin-center before:content-[''] before:w-0 hover:before:w-[90%] hover:before:left-[5%] before:rounded-sm md:mx-4">Back to Top</a>
       </div>

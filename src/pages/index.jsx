@@ -16,11 +16,11 @@ const Home = () => {
           <img
             src={portraitPhoto}
             alt="Portrait of Connor"
-            className="h-40 w-48 rounded-lg border border-wave-spray/50 object-cover sm:w-96 sm:h-96 lg:border-4 lg:border-wave-spray/80"
+            className="h-40 w-48 rounded-lg border border-wave-spray/50 object-cover shadow-lg shadow-gunmetal/20 sm:w-96 sm:h-96 lg:border-4 lg:border-wave-spray/80"
           />
         </div>
         <div className='w-dvw mb-40 flex justify-center lg:justify-start lg:m-4 lg:w-auto'>
-          <ul className="grid justify-center gap-3 sm:rounded-md bg-midnight-green pb-3 text-start font-body text-wave-spray w-full sm:max-w-sm sm:bg-midnight-green/75 lg:bg-wave-spray/80 lg:text-midnight-green lg:pb-0 lg:w-96">
+          <ul className="grid justify-center gap-3 sm:rounded-md bg-midnight-green pb-3 text-start font-body text-wave-spray w-full shadow-lg shadow-gunmetal/20 sm:max-w-sm sm:bg-midnight-green/75 lg:bg-wave-spray/80 lg:text-midnight-green lg:pb-0 lg:w-96">
             <li>
               <img />
               <p className="text-xl">

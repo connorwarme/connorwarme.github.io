@@ -11,8 +11,6 @@ import { AiOutlineMail as Contact } from "react-icons/ai";
 
 export default function ErrorPage() {
   const error = useRouteError();
-  console.error(error);
-{/* <i>{error.statusText || error.message}</i> */}
 
   const linkStyle = "btn-link text-wave-spray text-md md:text-xl font-semibold flex items-center w-full py-2 px-6 md:h-14 md:px-8 lg:px-12 relative shadow-md shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none"
   return (
