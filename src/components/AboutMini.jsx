@@ -16,7 +16,7 @@ const AboutMini = () => {
           <h3 className='text-3xl font-grenze m-2 p-2 pt-6 pb-0 text-center'>A software developer who&apos;s a craftsman at heart: </h3>
           <h3 className='text-xl m-2 p-2 pt-2 text-center'>detail-driven, analytical, hardworking and meticulous in his pursuit of elegant interfaces and excellent solutions.</h3>
 
-          <ul className="m-2" >
+          <ul className="m-2 lg:mx-8" >
             {
               bullets.map((point, index) => {
                 return (
