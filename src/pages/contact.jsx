@@ -4,8 +4,8 @@ import { MdOutlineErrorOutline as ErrorIcon } from "react-icons/md";
 import { VscLoading as LoadingIcon } from "react-icons/vsc";
 
 const Contact = () => {
-  const [email, setEmail] = useState(null)
-  const [message, setMessage] = useState(null)
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
   const [emailError, setEmailError] = useState(null)
   const [messageError, setMessageError] = useState(null)
   const [pending, setPending] = useState(null)
@@ -30,40 +30,54 @@ const Contact = () => {
       setMessageError(null)
     }
   }
+  const checkForm = () => {
+    if (message.length > 0 && email.length > 2) {
+      return true
+    }
+    if (message.length === 0) {
+      setMessageError('Message is required.')
+    }
+    if (email.length <= 2) {
+      setEmailError('Email is required.')
+    }
+    setPending(false)
+    return false
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
     setPending(true);
-
-    fetch("https://dubmailer.fly.dev/contactconnor", {
-      method: "POST",
-      headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        email: email, 
-        message: message,
+    if (checkForm()) {
+      fetch("https://dubmailer.fly.dev/contactconnor", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          email: email, 
+          message: message,
+        })
       })
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data && data.errors) {
-        setSuccess(false)
-        setError(true)      
-      } else {
-        setSuccess(true)
-        setResponse(data)
-      }
-      setPending(false);
+      .then(response => response.json())
+      .then(data => {
+        if (data && data.errors) {
+          setSuccess(false)
+          setError(true)      
+        } else {
+          setSuccess(true)
+          setResponse(data)
+        }
+        setPending(false);
 
-      // console.log(data)
-    })
-    .catch(e => {
-      console.log(e)
-      setSuccess(false)
-      setPending(false)
-      setError(true)
-    })
+        // console.log(data)
+      })
+      .catch(e => {
+        console.log(e)
+        setSuccess(false)
+        setPending(false)
+        setError(true)
+      })
+    }
   }
 
 
@@ -89,7 +103,7 @@ const Contact = () => {
               </div>
               <div className="flex justify-end">
                 { !pending 
-                ? <button type="submit" className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 relative hover:bg-midnight-green hover:text-wave-spray transition ease-in-out duration-200 shadow-sm shadow-midnight-green active:left-[1px] active:top-[2px] active:shadow-none">Send</button> 
+                ? <button type="submit" className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 relative hover:bg-midnight-green hover:text-wave-spray transition ease-in-out duration-200 shadow-sm shadow-midnight-green active:left-[1px] active:top-[2px] active:shadow-none md:px-8">Send</button> 
                 : <button disabled className="text-lg bg-transparent text-midnight-green font-semibold border-2 border-midnight-green rounded-lg py-2 px-4 mr-4 flex">
                   <LoadingIcon className="animate-spin h-6 w-6 flex-shrink-0 text-midnight-green mr-4" />
                   <span>Sending</span>
