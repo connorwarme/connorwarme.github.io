@@ -9,10 +9,12 @@ const Porfolio = () => {
     setExpanded(expanded === id ? null : id)
   }
   return (
-    <div id='portfolio'>
-      <h2 className="font-grenze text-4xl text-wave-spray text-center m-10">Portfolio</h2>
-      <div className='flex justify-center'>
-        <div className='grid grid-cols-1 place-items-center max-w-4xl'>
+    <div id="portfolio">
+      <h2 className="m-10 text-center font-grenze text-4xl text-wave-spray">
+        Portfolio
+      </h2>
+      <div className="flex justify-center">
+        <div className="grid max-w-4xl grid-cols-1 place-items-center">
           {cardData.map((item) => (
             <Card
               key={item.id}

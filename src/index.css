@@ -27,13 +27,13 @@
     font-size: 16px;
     font-weight: 400;
     height: 60px;
-    width: 180px; 
+    width: 180px;
     position: relative;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
   .btn:hover {
     text-decoration: none;
@@ -45,8 +45,8 @@
     height: 60px;
     left: 0;
     position: absolute;
-    top: 0; 
-    width: 100%; 
+    top: 0;
+    width: 100%;
     fill: none;
     stroke: rgb(210, 230, 238);
     stroke-width: 4;
@@ -68,13 +68,13 @@
   }
   .btn-ex span {
     z-index: 20;
-  }  
+  }
   .btn-ex:after {
     background: rgb(210, 230, 238);
-    content: "";
+    content: '';
     height: 155px;
     left: -75px;
-    opacity: .9;
+    opacity: 0.9;
     position: absolute;
     top: -50px;
     transform: rotate(35deg);
@@ -95,13 +95,15 @@
     text-shadow: none;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     border-radius: 0.125rem;
-  } 
-  
+  }
+
   .btn-link:hover {
     border: 2px solid rgba(210, 230, 238, 1);
-    box-shadow: inset 0 0 2px rgba(210, 230, 238, .5), 0 0 2px rgba(210, 230, 238, .2);
+    box-shadow:
+      inset 0 0 2px rgba(210, 230, 238, 0.5),
+      0 0 2px rgba(210, 230, 238, 0.2);
     outline-color: rgba(210, 230, 238, 0);
-    outline-offset: 15px; 
+    outline-offset: 15px;
   }
 }
 .btn-header {
@@ -134,8 +136,8 @@
   letter-spacing: 2px;
 }
 .btn-header:hover::before {
-  opacity: 1; 
-  transform: scale(1, 1); 
+  opacity: 1;
+  transform: scale(1, 1);
 }
 .btn-header::after {
   content: '';
@@ -149,6 +151,6 @@
   background-color: rgba(210, 230, 238, 0.3);
 }
 .btn-header:hover::after {
-  opacity: 0; 
+  opacity: 0;
   transform: scale(0.1, 1);
 }

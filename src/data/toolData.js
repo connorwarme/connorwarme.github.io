@@ -172,11 +172,11 @@ const prettier = {
 }
 
 const siteTools = [
-  {...react, mini: true},
-  {...tailwind, mini: true},
-  {...eslint, mini: true},
-  {...prettier, mini: true},
-  {...git, mini: true},
+  { ...react, mini: true },
+  { ...tailwind, mini: true },
+  { ...eslint, mini: true },
+  { ...prettier, mini: true },
+  { ...git, mini: true },
 ]
 const tools = [
   javascript,
@@ -200,4 +200,4 @@ const tools = [
   prettier,
 ]
 
-export { tools, siteTools } 
+export { tools, siteTools }

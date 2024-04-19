@@ -3,8 +3,10 @@ import ToolUnit from './ToolUnit'
 
 const Tools = () => {
   return (
-    <div className="pt-4 pb-4 flex flex-col items-center">
-      <h2 className="text-xl font-semibold text-center">Tools and Technologies</h2>
+    <div className="flex flex-col items-center pb-4 pt-4">
+      <h2 className="text-center text-xl font-semibold">
+        Tools and Technologies
+      </h2>
       <div className="m-2 flex flex-wrap justify-center gap-2 md:max-w-screen-md">
         {tools.map((tool) => (
           <ToolUnit key={tool.title} unit={tool} />

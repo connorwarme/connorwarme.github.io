@@ -10,24 +10,24 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
         index: true,
-        element: <Home />
+        element: <Home />,
       },
       {
-        path: "about",
+        path: 'about',
         element: <About />,
       },
       {
-        path: "contact",
+        path: 'contact',
         element: <Contact />,
       },
     ],
-  }
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

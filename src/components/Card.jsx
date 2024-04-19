@@ -10,7 +10,7 @@ const Card = ({ item, selection, handleSelection }) => {
   return (
     <>
       {item && item.title && (
-        <div className="m-2 rounded-md bg-midnight-green/75 p-2 font-play max-w-sm flex flex-col justify-between md:self-stretch md:max-w-lg lg:max-w-2xl shadow-md">
+        <div className="m-2 flex max-w-sm flex-col justify-between rounded-md bg-midnight-green/75 p-2 font-play shadow-md md:max-w-lg md:self-stretch lg:max-w-2xl">
           <div className="mb-2 flex justify-center md:m-2 md:mb-4">
             <a
               className="w-inherit "
@@ -72,7 +72,7 @@ const Card = ({ item, selection, handleSelection }) => {
           </div>
           <div className="flex justify-center md:p-2">
             <button
-              className="btn-ex m-2 rounded-md border-2 border-wave-spray p-2 px-4 font-semibold tracking-wide text-wave-spray active:left-[1px] active:top-[2px] active:shadow-none md:text-lg md:h-14 md:px-5 lg:text-xl lg:px-6"
+              className="btn-ex m-2 rounded-md border-2 border-wave-spray p-2 px-4 font-semibold tracking-wide text-wave-spray active:left-[1px] active:top-[2px] active:shadow-none md:h-14 md:px-5 md:text-lg lg:px-6 lg:text-xl"
               onClick={() => handleSelection(item.id)}
             >
               {selection === item.id ? (

@@ -11,7 +11,7 @@ const CardImage = ({ item }) => {
           {item.summary}
         </h2>
         <a
-          className="btn p-2 pl-4 pr-4 text-center rounded-sm relative shadow-sm shadow-slate-800 active:top-[1px] active:left-[2px] active:shadow-none sm:text-lg md:text-xl"
+          className="btn relative rounded-sm p-2 pl-4 pr-4 text-center shadow-sm shadow-slate-800 active:left-[2px] active:top-[1px] active:shadow-none sm:text-lg md:text-xl"
           href={item.url}
           target="_blank"
           rel="noreferrer"
