@@ -27,7 +27,7 @@ const AboutComp = () => {
   }
 
   return (
-    <div className="font-play p-4 bg-midnight-green/75 whitespace-pre-wrap sm:px-8 md:rounded-b-md">
+    <div className="font-play p-4 bg-midnight-green/75 whitespace-pre-wrap shadow-lg shadow-gunmetal/20 sm:px-8 md:rounded-b-md">
       <h2 className="text-xl font-semibold text-center p-2 pb-4">Background</h2>
       <p className='pb-2'>
         &#0009;My education prepared me for work as a chaplain or pastor -
@@ -59,7 +59,7 @@ const AboutComp = () => {
         I also enjoy spending quality time with family and friends,
         scheming and dreaming about our next adventures, and reading.
       </p>
-      <img src={ac} alt="Amity and Connor in Yosemite" className='w-dvw object-fit rounded-sm'/>
+      <img src={ac} alt="Amity and Connor in Yosemite" className='w-dvw object-fit rounded-sm shadow-lg shadow-gunmetal/20'/>
       <div className='flex flex-wrap justify-center pb-2 md:m-2 md:pb-6'>
         <p className='m-1'>
           Amity and Connor in Yosemite, USA.
@@ -68,7 +68,7 @@ const AboutComp = () => {
           <ExternalLink link={ts} />
         </p>
       </div>
-      <img src={lake} alt="Connor climbing at Lake Louise" className='w-dvw object-fit rounded-sm' />
+      <img src={lake} alt="Connor climbing at Lake Louise" className='w-dvw object-fit rounded-sm shadow-lg shadow-gunmetal/20' />
       <p className='m-1 mt-2 pb-2 text-center'>Connor climbing at Lake Louise, CA</p>
     </div>
   )

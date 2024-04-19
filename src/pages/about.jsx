@@ -19,7 +19,7 @@ const About = () => {
     <div className="md:grid md:grid-cols-9 justify-items-center">
       <div className="text-wave-spray flex flex-col items-center md:col-start-2 md:col-end-9 md:mb-64 lg:max-w-[960px]">
         <h1 className="text-4xl font-grenze text-center m-10 xl:m-24">About</h1>
-        <div className="bg-midnight-green/75 font-play p-2 mb-64 sm:px-4 md:mb-0 md:rounded-t-md" >
+        <div className="bg-midnight-green/75 font-play p-2 mb-64 shadow-lg shadow-gunmetal/20 sm:px-4 md:shadow-none md:mb-0 md:rounded-t-md" >
           <h3 className="text-xl font-semibold pt-3 pb-3 text-center">
             Hi, I&#39;m Connor - a versatile software developer with full-stack experience.
           </h3>
