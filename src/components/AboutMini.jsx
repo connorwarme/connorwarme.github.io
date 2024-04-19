@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import { IoRocketSharp as Rocket } from "react-icons/io5";
+import ExternalLink from "./ExternalLink"
 import winds from "../images/gallery/winds.jpg"
 
 const AboutMini = () => {
   const bullets = ["Proficient in full stack JavaScript (including React and Node.js), code versioning tools (Git), continuous integration and deployment (w/ GitHub), website design and styling, and more", "Reliable and responsible team-player with excellent communication skills who embodies kindness and empathy", "Excited for an opportunity to grow and apply software development knowledge and skills"]
-
+  const kd = {
+    text: 'Katrina Duff',
+    url: "https://katrinadphotography.pixieset.com",
+    style: "inline-block transition ease-in-out duration-150 hover:underline pl-2"
+  }
     return ( 
       <>
         <div className="bg-midnight-green mt-10 mb-24 font-body sm:rounded-md lg:max-w-[960px]">
@@ -31,7 +36,12 @@ const AboutMini = () => {
               Contact
             </Link>
           </div>
-          <img src={winds} alt="Connor lakeside in the Wind River Range" className="min-h-24 w-dvh object-cover sm:rounded-b-md" />
+          <div className="relative">
+            <img src={winds} alt="Connor lakeside in the Wind River Range" className="min-h-24 w-dvh object-cover sm:rounded-b-md" />
+            <p className="absolute bottom-1 right-2 text-wave-spray">Photo:
+              <ExternalLink link={kd}/>
+            </p>
+          </div>
         </div>
       </>
 
