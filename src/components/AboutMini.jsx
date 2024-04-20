@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { IoRocketSharp as Rocket } from 'react-icons/io5'
-import ExternalLink from './ExternalLink'
+import ExternalLink from './ExternalLink.jsx'
 import winds from '../images/gallery/winds.jpg'
 
 const AboutMini = () => {

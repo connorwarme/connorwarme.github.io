@@ -1,5 +1,5 @@
-import { tools } from '../data/toolData'
-import ToolUnit from './ToolUnit'
+import { tools } from '../data/toolData.js'
+import ToolUnit from './ToolUnit.jsx'
 
 const Tools = () => {
   return (

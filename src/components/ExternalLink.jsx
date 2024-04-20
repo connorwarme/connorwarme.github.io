@@ -1,4 +1,5 @@
 import { HiOutlineExternalLink as LinkIcon } from 'react-icons/hi'
+
 const ExternalLink = ({ link }) => {
   const style = `${link.style}`
   return (

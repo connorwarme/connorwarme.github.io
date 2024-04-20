@@ -1,5 +1,5 @@
-import ToolUnit from './ToolUnit'
-import CardImage from './CardImage'
+import ToolUnit from './ToolUnit.jsx'
+import CardImage from './CardImage.jsx'
 import { VscTools } from 'react-icons/vsc'
 import { VscFoldDown, VscFoldUp } from 'react-icons/vsc'
 import { HiOutlineExternalLink as LinkIcon } from 'react-icons/hi'

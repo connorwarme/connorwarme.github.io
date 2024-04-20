@@ -1,5 +1,5 @@
-import AboutMini from '../components/AboutMini'
-import Porfolio from '../components/Portfolio'
+import AboutMini from '../components/AboutMini.jsx'
+import Porfolio from '../components/Portfolio.jsx'
 import portraitPhoto from '../images/gallery/grin.jpg'
 
 const Home = () => {

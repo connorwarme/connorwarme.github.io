@@ -1,8 +1,8 @@
 import { VscTools, VscGithubInverted } from 'react-icons/vsc'
 import { BsLinkedin } from 'react-icons/bs'
-import { siteTools } from '../data/toolData'
-import ToolUnit from './ToolUnit'
-import ExternalLink from './ExternalLink'
+import { siteTools } from '../data/toolData.js'
+import ToolUnit from './ToolUnit.jsx'
+import ExternalLink from './ExternalLink.jsx'
 
 const Footer = () => {
   const ts = {

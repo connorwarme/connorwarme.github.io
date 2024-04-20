@@ -1,4 +1,4 @@
-import ExternalLink from './ExternalLink'
+import ExternalLink from './ExternalLink.jsx'
 import { Link } from 'react-router-dom'
 import lake from '../images/gallery/lake.jpg'
 import ac from '../images/gallery/a&c.jpg'

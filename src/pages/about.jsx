@@ -1,6 +1,6 @@
-import Tools from '../components/Tools'
-import ExternalLink from '../components/ExternalLink'
-import AboutComp from '../components/About'
+import Tools from '../components/Tools.jsx'
+import ExternalLink from '../components/ExternalLink.jsx'
+import AboutComp from '../components/About.jsx'
 import resume from '../assets/ConnorWarmeResume.pdf'
 
 const About = () => {

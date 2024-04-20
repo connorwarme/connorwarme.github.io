@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import Card from './Card'
-import cardData from '../data/projectData'
+import Card from './Card.jsx'
+import cardData from '../data/projectData.js'
 
 const Porfolio = () => {
   const [expanded, setExpanded] = useState(null)
