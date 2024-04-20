@@ -4,14 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        big: ['BigShoulders'],
         body: ['Hedvig'],
         play: ['Playfair'],
         playItalic: ['Playfair Italic'],
-        cairo: ['Cairo'],
-        yrsa: ['Yrsa'],
-        tourney: ['Tourney'],
-        choko: ['Choko'],
         grenze: ['Grenze'],
       },
       colors: {
