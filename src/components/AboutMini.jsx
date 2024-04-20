@@ -59,7 +59,7 @@ const AboutMini = () => {
             alt="Connor lakeside in the Wind River Range"
             className="w-dvh min-h-24 object-cover sm:rounded-b-md"
           />
-          <p className="absolute bottom-1 right-2 text-wave-spray">
+          <p className="absolute bottom-1 right-2 text-wave-spray font-play">
             Photo:
             <ExternalLink link={kd} />
           </p>
