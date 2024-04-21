@@ -10,7 +10,7 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: '/portfolio/',
+    path: '/',
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
@@ -28,7 +28,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-])
+], {
+  basename: '/portfolio'
+})
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
