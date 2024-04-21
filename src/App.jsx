@@ -1,10 +1,9 @@
 import { Outlet } from 'react-router-dom'
 import ScrollToAnchor from './components/ScrollToAnchor.jsx'
+import { ScrollRestoration } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
-import lakePhoto from './images/gallery/lake.jpg'
 import waterfallPhoto from './images/gallery/waterfall1.jpg'
-import viewPhoto from './images/gallery/valleyview.jpg'
 import './App.css'
 
 function App() {
@@ -20,6 +19,7 @@ function App() {
       <Outlet />
       <div className="grow"></div>
       <Footer />
+      <ScrollRestoration />
     </div>
   )
 }
