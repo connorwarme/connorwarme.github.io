@@ -41,7 +41,7 @@ const AboutMini = () => {
         </ul>
         <div className="flex justify-center gap-4 p-2 pb-4 font-play text-xl font-semibold tracking-wide sm:gap-12">
           <Link
-            to={'about'}
+            to={'about#top'}
             className="btn-link relative flex items-center px-4 py-2 text-wave-spray shadow-md shadow-slate-800 active:left-[1px] active:top-[2px] active:shadow-none md:h-14 md:px-8 lg:px-12"
           >
             About
