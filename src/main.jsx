@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     ],
   },
 ], {
-  basename: '/portfolio'
+  basename: '/'
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
