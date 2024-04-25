@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MdOutlineErrorOutline as ErrorIcon } from 'react-icons/md'
 import { VscLoading as LoadingIcon } from 'react-icons/vsc'
+import ExternalLink from "../components/ExternalLink.jsx"
 
 const Contact = () => {
   const [email, setEmail] = useState('')
@@ -79,6 +80,13 @@ const Contact = () => {
     }
   }
 
+  const linked = {
+    text: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/connor-warme-13c8',
+    style:
+      'inline-block transition ease-in-out duration-150 hover:underline pl-1',
+  }
+
   return (
     <div className="w-dvw md:grid md:grid-cols-9 md:justify-items-center">
       <div className="md:col-start-2 md:col-end-9 md:w-[70%] md:max-w-2xl">
@@ -153,8 +161,7 @@ const Contact = () => {
                     </p>
                   </div>
                   <p>
-                    Please refresh the page to try again, or email
-                    amity@amitywarme.com. Sorry for the inconvenience!
+                    Please refresh the page to try again, or get in touch on<ExternalLink link={linked} />. Sorry for the inconvenience!
                   </p>
                 </div>
               )}
