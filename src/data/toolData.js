@@ -2,6 +2,7 @@ import jsIcon from '../images/icons/javascript.svg'
 import reactIcon from '../images/icons/react.svg'
 import nodeIcon from '../images/icons/node.svg'
 import astroIcon from '../images/icons/astro.svg'
+import expressIcon from '../images/icons/express.svg'
 import nextIcon from '../images/icons/nextjs.svg'
 import jestIcon from '../images/icons/jest.svg'
 import gitIcon from '../images/icons/git.svg'
@@ -47,6 +48,14 @@ const astro = {
   img: {
     src: astroIcon,
     alt: 'Astro icon',
+  },
+  mini: false,
+}
+const express = {
+  title: 'Express',
+  img: {
+    src: expressIcon,
+    alt: 'Express icon',
   },
   mini: false,
 }
@@ -183,6 +192,7 @@ const tools = [
   react,
   node,
   astro,
+  express,
   next,
   jest,
   git,
