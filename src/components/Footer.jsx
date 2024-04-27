@@ -13,7 +13,7 @@ const Footer = () => {
   }
 
   return (
-    <div className="flex w-dvw flex-col justify-center bg-midnight-green/75 py-4 font-play text-wave-spray shadow-lg shadow-gunmetal/20">
+    <div className="flex flex-col justify-center bg-midnight-green/75 py-4 font-play text-wave-spray shadow-lg shadow-gunmetal/20">
       <div className="flex justify-center">
         <a
           href="#top"
