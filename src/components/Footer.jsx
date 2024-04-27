@@ -13,7 +13,7 @@ const Footer = () => {
   }
 
   return (
-    <div className="flex w-dvw flex-col justify-center bg-midnight-green/75 p-4 font-play text-wave-spray shadow-lg shadow-gunmetal/20">
+    <div className="flex w-dvw flex-col justify-center bg-midnight-green/75 py-4 font-play text-wave-spray shadow-lg shadow-gunmetal/20">
       <div className="flex justify-center">
         <a
           href="#top"
@@ -52,7 +52,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex items-center justify-center border-t border-wave-spray pt-2">
+      <div className="flex items-center justify-center border-t border-wave-spray pt-2 mx-4">
         <span className="flex justify-center">
           <VscTools className="h-6 w-6 " />
           <span className="ml-1">:</span>
