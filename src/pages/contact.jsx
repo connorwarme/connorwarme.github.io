@@ -43,6 +43,19 @@ const Contact = () => {
     setPending(false)
     return false
   }
+  const handleErrors = (array) => {
+    const errorArray = Array.from(array)
+    errorArray.forEach(err => {
+      if (err.path) {
+        if (err.path === 'email') {
+          setEmailError('Please enter a valid email address.')
+        } 
+        else if (err.path === 'message') {
+          setMessageError('Please enter a message.')
+        } 
+      }
+    })
+  }
   const handleSubmit = (e) => {
     e.preventDefault()
     setPending(true)
@@ -62,7 +75,7 @@ const Contact = () => {
         .then((data) => {
           if (data && data.errors) {
             setSuccess(false)
-            setError(true)
+            handleErrors(data.errors)
           } else {
             setSuccess(true)
             setResponse(data)
